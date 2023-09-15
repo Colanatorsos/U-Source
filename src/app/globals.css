@@ -35,3 +35,15 @@ a {
   --Red: #e32652;
   --Grey: #808080;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}

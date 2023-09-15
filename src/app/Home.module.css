@@ -1,0 +1,45 @@
+.hero {
+  padding: 60px 0 150px;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heroLeft h3 {
+  color: var(--White);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heroLeft p {
+  color: var(--White);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.heroBtn {
+  display: flex;
+  width: 255px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--Red);
+  transition: 0.4s;
+}
+
+.heroBtn:hover {
+  background: transparent;
+  color: var(--Red);
+  border-radius: 15px;
+  border: 2px solid var(--Red);
+}
