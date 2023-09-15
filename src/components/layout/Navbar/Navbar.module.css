@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769");
+
 .header {
   background: transparent;
 }
@@ -18,7 +20,7 @@
 .li {
   position: relative;
   font-feature-settings: "clig" off, "liga" off;
-  /*font-family: SF Pro Display;*/
+  font-family: SF Pro Display;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32,7 +34,7 @@
   height: 1px;
   background: var(--Red);
   opacity: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 .li:hover::before {
   opacity: 1;
@@ -50,12 +52,11 @@
   color: var(--White);
   text-align: right;
   font-feature-settings: "clig" off, "liga" off;
-  /*font-family: SF Pro Display;*/
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  transition: .4s;
+  transition: 0.4s;
 }
 .btn:hover {
   background: transparent;
