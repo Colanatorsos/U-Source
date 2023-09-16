@@ -9,6 +9,7 @@
   line-height: normal;
 }
 
+
 .container {
   width: 70rem;
   margin: 0px auto;
@@ -27,6 +28,7 @@
   margin-bottom: 100px;
 }
 .card {
+  position: relative;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -100,4 +102,35 @@
 }
 .input:focus {
   outline: none;
+  transition: 0.4s;
+  border-bottom: 0.125rem solid #e32652;
+}
+.btn:hover {
+  color: #e32652;
+  border: 3px solid #e32652;
+  background: transparent;
+  transition: 0.2s;
+}
+.clicked {
+  background: var(--Dark, #232323);
+  border: 3px solid #232323;
+  color: white;
+}
+.clicked:hover {
+  color: white;
+  border: 3px solid #232323;
+  background: #232323;
+  transition: 0.2s;
+}
+.side {
+  height: 24.4rem;
+  width: 14.4rem;
+  border-radius: 1.25rem;
+  background: var(--Red, #e32652);
+  display: inline-flex;
+  padding: 3.375rem 14.3125rem 3.4375rem 3.9375rem;
+  align-items: center;
+  position: absolute;
+  right: -7rem;
+  bottom: 6.25rem;
 }
