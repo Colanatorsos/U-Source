@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 60px 0 50px;
+  padding: 60px 0 -20px;
 }
 
 .container {
@@ -35,14 +35,14 @@
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
   gap: 50px;
 }
 .card:hover {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
 }
-.card:hover .right-card {
+.card:hover .rightCard {
   opacity: 0;
   visibility: hidden;
 }

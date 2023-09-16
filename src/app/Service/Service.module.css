@@ -1,5 +1,8 @@
 .services{
   text-align: center;
+  background: url(./../../../public/portfolio/bg.png) no-repeat;
+  background-position: calc(50% - 15px) 123px;
+  
 }
 .box {
   display: inline-flex;
