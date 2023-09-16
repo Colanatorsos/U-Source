@@ -72,7 +72,7 @@
   top: 135px;
   right: 136px;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s; 
 }
 
 .btn:hover {
