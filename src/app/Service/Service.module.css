@@ -1,11 +1,9 @@
-.services {
-  padding: 1;
+.services{
+  text-align: center;
 }
 .box {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 60px 0 80px;
   gap: 20px;
 }
@@ -19,6 +17,7 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+
 }
 .text {
   color: #fff;
@@ -43,7 +42,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 120px;
-  width: 1110;
+  width: 1110px;
   height: 280px;
 }
 .cardTitle {
@@ -70,6 +69,7 @@
   font-weight: 500;
   line-height: normal;
   background: none;
+  min-height: 155px;
 }
 .tools {
   margin-bottom: 100px;
@@ -86,8 +86,8 @@
   align-items: center;
   gap: 40px;
   display: inline-flex;
-
-  padding: 30px 28px 85px 27px;
+  height: 359px;
+  padding: 30px 27px 54px 28px ;
   margin-right: 30px;
 }
 
@@ -117,7 +117,7 @@
   justify-content: center;
   align-items: center;
   background: none;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .container {
   text-align: center;
