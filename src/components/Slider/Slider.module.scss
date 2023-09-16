@@ -8,6 +8,7 @@
   text-align: center;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   //backdrop-filter: blur(25px);
   > h3 {

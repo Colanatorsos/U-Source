@@ -4,7 +4,7 @@ import styles from './Slider.module.scss'
 import 'swiper/css/pagination';
 import './style.css'
 
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const Slider = ({ children }) => {
   return (
@@ -12,7 +12,11 @@ const Slider = ({ children }) => {
       spaceBetween={100}
       slidesPerView={'auto'}
       centeredSlides={true}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay, Pagination]}
       className="mySwiper">
       {children.map((el, idx) => (
         <SwiperSlide>
