@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.scss'
 import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <header className={styles.header}>
-      <div className="container">
+      <div className="container-lg">
         <nav className={styles.nav}>
           <Link href="/">
             <Image
@@ -14,6 +14,7 @@ const Navbar = () => {
               width={68.457}
               height={52}
               alt='logo'
+              className={styles.logo}
             />
           </Link>
           <ul className={styles.ul}>

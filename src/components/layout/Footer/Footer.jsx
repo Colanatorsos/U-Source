@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -15,6 +15,7 @@ const Footer = () => {
                 width={64.504}
                 height={49}
                 alt='logo'
+                className={styles.logoImg}
               />
             </Link>
             Школа креативных профессий
@@ -86,8 +87,9 @@ const Footer = () => {
             width={64.504}
             height={49}
             alt='logo'
+            className={styles.logoWhite}
           />
-          <div className={styles.textBox}>
+          <div className='d-flex flex-d-column flex-d-md-row gap-8 gap-md-77'>
             <p>© 2023 | ОсОО «U!SkillZ» | Все права защищены. <br />
               Копирование материалов запрещено.</p>
             <p>Политика конфидециальности <br />
