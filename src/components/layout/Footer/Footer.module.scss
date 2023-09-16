@@ -1,0 +1,95 @@
+.footer {
+  padding-bottom: 50px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+  border-bottom: 2px solid var(--Grey);
+  border-top: 2px solid var(--Grey);
+  margin-bottom: 30px;
+}
+
+.bottom {
+  display: flex;
+  gap: 194px;
+  margin-bottom: 120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  > p {
+    color: var(--Red);
+  }
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    > li {
+      > a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.privacy {
+  display: flex;
+  gap: 32px;
+  > div {
+    > p {
+      color: var(--Grey);
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logoWhite {
+    width: 73.724px;
+    height: 56px;
+  }
+  .bottom {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 12px;
+    gap: 8px;
+    width: 145px;
+  }
+  .logoImg {
+    width: 30.002px;
+    height: 22.789px;
+  }
+  .icons {
+    gap: 23px;
+  }
+}

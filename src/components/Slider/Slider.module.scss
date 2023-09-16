@@ -1,0 +1,48 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  //padding: 81px 127px 81px 126px;
+  padding: 81px 12vw;
+  text-align: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
+  //backdrop-filter: blur(25px);
+  > h3 {
+    color: var(--White);
+    font-feature-settings: "clig" off, "liga" off;
+    //font-size: 48px;
+    font-size: calc(var(--index) * 2.5);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  > span {
+    //width: 300px;
+    width: calc(var(--index) * 15);
+    height: 8px;
+    border-radius: 3px;
+    background: var(--White);
+  }
+  > p {
+    //width: 825px;
+    color: var(--White);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 26px;
+    font-size: calc(var(--index) * 1);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider {
+    > span {
+      width: calc(var(--index) * 10);
+    }
+  }
+}
