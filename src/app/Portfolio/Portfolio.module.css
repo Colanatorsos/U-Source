@@ -37,6 +37,7 @@
   display: flex;
   margin-bottom: 120px;
   gap: 50px;
+  transition: all 0.5s ease; 
 }
 .card:hover {
   background: rgba(255, 255, 255, 0.3);
@@ -74,6 +75,8 @@
   right: 136px;
   opacity: 0;
   transition: opacity 0.3s;
+  white-space: nowrap;
+  transition: all 0.4s ease; 
 }
 
 .btn:hover {
