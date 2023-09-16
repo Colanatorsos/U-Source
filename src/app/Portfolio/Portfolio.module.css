@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 60px 0 100px;
+  padding: 60px 0 50px;
 }
 
 .container {
@@ -35,6 +35,7 @@
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
   display: flex;
+  margin-bottom: 50px;
   gap: 50px;
 }
 .card:hover {
