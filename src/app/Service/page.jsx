@@ -13,9 +13,9 @@ const page = () => {
               вашего бизнеса.
             </p>
           </div>
-          <div className={styles.services - card}>
-            <h2 className={styles.card - title}>Дизайн </h2>
-            <p className={styles.card - text}>
+          <div className={styles.servicesCard}>
+            <h2 className={styles.cardTitle}>Дизайн </h2>
+            <p className={styles.cardText}>
               Дизайн веб-сайта - это один из ключевых факторов, определяющих его
               успех и <br /> эффективность. Эффективный дизайн объединяет в себе
               функциональность,
@@ -26,9 +26,9 @@ const page = () => {
               <br /> успешного дизайна.
             </p>
           </div>
-          <div className={styles.services - card}>
-            <h2 className={styles.card - title}>Разработка </h2>
-            <p className={styles.card - text}>
+          <div className={styles.servicesCard}>
+            <h2 className={styles.cardTitle}>Разработка </h2>
+            <p className={styles.cardText}>
               Разработка веб-сайтов - это сложный и творческий процесс,
               включающий
               <br />
@@ -40,9 +40,9 @@ const page = () => {
               интерфейсы и обеспечивают надежность и безопасность сайта.
             </p>
           </div>
-          <div className={styles.services - card}>
-            <h2 className={styles.card - title}>Поддержка </h2>
-            <p className={styles.card - text}>
+          <div className={styles.servicesCard}>
+            <h2 className={styles.cardTitle}>Поддержка </h2>
+            <p className={styles.cardText}>
               Поддержка веб-сайта после разработки - это ключевой этап, который
               <br />
               обеспечивает его стабильную работу и безопасность. Мы регулярно
@@ -54,9 +54,9 @@ const page = () => {
               <br /> технических аспектах, чтобы достичь желаемых результатов.
             </p>
           </div>
-          <div className={styles.services - card}>
-            <h2 className={styles.card - title}>SEO - оптимизация </h2>
-            <p className={styles.card - text}>
+          <div className={styles.servicesCard}>
+            <h2 className={styles.cardTitle}>SEO - оптимизация </h2>
+            <p className={styles.cardText}>
               Поддержка веб-сайта после разработки - это ключевой этап, который
               <br /> обеспечивает его стабильную работу и безопасность. Мы
               регулярно проверяем
@@ -73,14 +73,14 @@ const page = () => {
           <h2 className={styles.title}>Инструменты</h2>
           <div className="row">
             <div className="col-6">
-              <h2 className={styles.tools - title}>Разработка</h2>
-              <p className={styles.card - text}>
+              <h2 className={styles.toolsTitle}>Разработка</h2>
+              <p className={styles.cardText}>
                 При разработке сайта мы полагаемся на <br /> современные и
                 разнообразные
                 <br /> инструменты, чтобы создать
                 <br /> функциональный сайт.
               </p>
-              <div className={styles.box - images}>
+              <div className={styles.boxImages}>
                 <Image
                   src="/service/js.svg"
                   alt="JS"
@@ -112,13 +112,13 @@ const page = () => {
               </div>
             </div>
             <div className="col-6">
-              <h2 className={styles.tools - title}>Дизайн</h2>
-              <p className={styles.card - text}>
+              <h2 className={styles.toolsTitle}>Дизайн</h2>
+              <p className={styles.cardText}>
                 Мы используем современные <br />
                 инструменты, чтобы создать уникальные <br />
                 визуальные решения.
               </p>
-              <div className={styles.box - images}>
+              <div className={styles.boxImages}>
                 <Image
                   src="/service/figma.svg"
                   alt="Figma"

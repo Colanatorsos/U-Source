@@ -31,7 +31,7 @@
   line-height: normal;
   width: 878px;
 }
-.services-card {
+.servicesCard {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
   gap: 10px;
   margin-bottom: 120px;
 }
-.card-title {
+.cardTitle {
   color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Headline 1 */
@@ -58,7 +58,7 @@
   /* width: 981px; */
   padding-bottom: 10px;
 }
-.card-text {
+.cardText {
   color: var(--White, #fff);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -89,7 +89,7 @@
   margin-right: 30px;
 }
 
-.tools-title {
+.toolsTitle {
   color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Headline 1 */
@@ -103,7 +103,7 @@
   /* width: 981px; */
 }
 
-.box-images {
+.boxImages {
   display: flex;
   justify-content: flex-end;
   align-items: center;
