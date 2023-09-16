@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Service.module.css";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -89,7 +90,7 @@ const page = () => {
                   height={48}
                 />
                 <Image
-                  src="/service/python.svg"
+                  src="service/python.svg"
                   alt="Python"
                   className={styles.images}
                   width={48}

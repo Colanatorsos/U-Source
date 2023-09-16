@@ -1,0 +1,103 @@
+.title {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container {
+  width: 70rem;
+  margin: 0px auto;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
+}
+.section {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  height: 43.75rem;
+  width: 100%;
+  padding: 7.75rem 6.875rem;
+}
+.text {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 33.75rem;
+  margin-bottom: 3.75rem;
+}
+.input {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: transparent;
+  width: 26.875rem;
+  height: 2.5rem;
+  border: 0px;
+  border-bottom: 0.125rem solid #808080;
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input::placeholder {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.13rem;
+}
+.btn {
+  display: flex;
+  width: 26.875rem;
+  height: 3.75rem;
+  padding: 0.9375rem 0rem 1rem 0rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 1.2rem;
+  border-radius: 1rem;
+  background: #e32652;
+  border: none;
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.input:focus {
+  outline: none;
+}
