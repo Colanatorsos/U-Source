@@ -69,7 +69,6 @@
   font-weight: 500;
   line-height: normal;
   background: none;
-  min-height: 155px;
 }
 .tools {
   margin-bottom: 100px;
@@ -111,14 +110,13 @@
   align-items: center;
   gap: 70px;
   background: none;
+
 }
 .images {
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
-  margin-top: 10px;
+
 }
-.container {
-  text-align: center;
-}
+
