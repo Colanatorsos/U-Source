@@ -72,8 +72,8 @@ const page = () => {
       <section className={styles.tools}>
         <div className="container">
           <h2 className={styles.title}>Инструменты</h2>
-          <div className="row">
-            <div className="col-6">
+          <div className={styles.row}>
+            <div className={styles.col6}>
               <h2 className={styles.toolsTitle}>Разработка</h2>
               <p className={styles.cardText}>
                 При разработке сайта мы полагаемся на <br /> современные и
@@ -112,7 +112,7 @@ const page = () => {
                 />
               </div>
             </div>
-            <div className="col-6">
+            <div className={styles.col6}>
               <h2 className={styles.toolsTitle}>Дизайн</h2>
               <p className={styles.cardText}>
                 Мы используем современные <br />
