@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 60px 0 100px;
 }
 
 .container {
@@ -33,7 +34,6 @@
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
-  margin-bottom: 50px;
   display: flex;
   gap: 50px;
 }
@@ -72,7 +72,7 @@
   top: 135px;
   right: 136px;
   opacity: 0;
-  transition: opacity 0.3s; 
+  transition: opacity 0.3s;
 }
 
 .btn:hover {
