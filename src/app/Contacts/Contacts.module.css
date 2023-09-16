@@ -149,8 +149,14 @@
   gap: 60px;
 }
 
-.side ul li{
+.side ul li {
   display: flex;
   align-items: center;
   gap: 24px;
+  color: var(--White);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
