@@ -1,4 +1,3 @@
-"use client"
 import styles from './Home.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
