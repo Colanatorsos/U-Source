@@ -133,6 +133,9 @@
   right: -7rem;
   bottom: 6.25rem;
   gap: 48px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .sideTitle {
@@ -159,4 +162,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.sideVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
