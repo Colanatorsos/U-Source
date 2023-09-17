@@ -7,7 +7,7 @@ const page = () => {
     {
       id: "1",
       images: "/portfolio/alfa-bank.svg",
-      title: "Альфа Банк", 
+      title: "Альфа Банк",
       description:
         "Удобный онлайн-инструмент для управления финансами, предоставляющий клиентам доступ к счетам, переводам и платежам",
       slideImage: "/portfolio/slide-image.svg",
