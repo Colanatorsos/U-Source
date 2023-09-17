@@ -1,3 +1,5 @@
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import styles from './Home.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -142,7 +144,8 @@ const page = () => {
         <h1>Ценности компании:</h1>
         <Slider children={companyValuesSliderContent} />
       </section>
-      <section className={styles.ourAdvantages}>
+      <section className={styles.ourAdvantages}
+      >
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.ourAdvantagesH}>Наши преимущества:</h1>
           <div className={styles.ourAdvantagesBlock}>
