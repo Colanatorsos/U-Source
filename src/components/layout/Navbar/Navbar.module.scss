@@ -25,19 +25,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.li::before {
-  position: absolute;
-  bottom: -5px;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: var(--Red);
-  opacity: 0;
-  transition: 0.4s;
-}
-.li:hover::before {
-  opacity: 1;
+  &::before {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--Red);
+    opacity: 0;
+    transition: 0.4s;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
 }
 
 .btn {
@@ -57,10 +57,30 @@
   font-weight: 700;
   line-height: normal;
   transition: 0.4s;
+  &:hover {
+    background: transparent;
+    color: var(--Red);
+    border-radius: 15px;
+    border: 2px solid var(--Red);
+  }
 }
-.btn:hover {
-  background: transparent;
-  color: var(--Red);
-  border-radius: 15px;
-  border: 2px solid var(--Red);
+
+@media (max-width: 768px) {
+  .nav {
+    height: 50px;
+    padding: 7px 0;
+  }
+  .ul {
+    gap: 18px;
+  }
+  .li {
+    font-size: 12px;
+  }
+  .btn {
+    display: none;
+  }
+  .logo {
+    width: 49.995px;
+    height: 36px;
+  }
 }

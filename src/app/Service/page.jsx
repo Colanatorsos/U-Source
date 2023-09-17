@@ -77,7 +77,7 @@ const page = () => {
                   height={48}
                 />
                 <Image
-                  src="/service/python.svg"
+                  src="service/python.svg"
                   alt="Python"
                   className={styles.images}
                   width={48}

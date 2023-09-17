@@ -1,0 +1,393 @@
+.hero {
+  padding: 60px 0 120px;
+}
+
+.heroLeft {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  >h1 {
+    color: var(--White);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 48px;
+    //font-size: calc(var(--index) * 2.4);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  >p {
+    color: var(--White);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 22px;
+    //font-size: calc(var(--index) * 1.4);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  >.heroBtn {
+    //display: flex;
+    //width: 255px;
+    //height: 60px;
+    //justify-content: center;
+    //align-items: center;
+    padding: 17px 31px 17px 30px;
+    width: max-content;
+    border-radius: 16px;
+    background: var(--Red);
+    transition: 0.4s;
+    color: var(--White, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: SF Pro Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 2px solid var(--Red);
+
+    &:hover {
+      background: transparent;
+      color: var(--Red);
+      border-radius: 15px;
+      border: 2px solid var(--Red);
+    }
+  }
+}
+
+.heroUnder {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  >h2 {
+    color: var(--White, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    //font-size: calc(var(--index) * 1.6);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  >p {
+    color: var(--White, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 18px;
+    //font-size: calc(var(--index) * 0.9);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 920px;
+  }
+}
+
+/* ____________________________________________ */
+/* ____________________________________________ */
+/* _____________________________________ */
+
+.companyValues {
+  text-align: center;
+  padding: 50px 0px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  background: url(./../../public/home/company-Values.png);
+
+  >h1 {
+    color: var(--White);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.ourAdvantages {
+  background: url(./../../public/home/our-advantages.png);
+  margin: 120px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &H {
+    color: var(--White);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &Block {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 350px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    //display: flex;
+    //justify-content: center;
+    //flex-wrap: wrap;
+    //gap: 30px;
+  }
+}
+
+.OurServices {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+  text-align: center;
+
+  >h1 {
+    color: var(--White, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  >p {
+    color: var(--White, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &Block {
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    grid-template-rows: repeat(2, 253px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    >a {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      padding: 26px 75px 25px 74px;
+      border-radius: 16px;
+      background: var(--Red, #e32652);
+      color: var(--White, #fff);
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transition: 0.4s;
+
+      &:hover {
+        background: none;
+        padding: 23px 72px 22px 71px;
+        color: var(--Red);
+        border: 3px solid var(--Red, #e32652);
+      }
+    }
+  }
+}
+
+.About {
+  &Title {
+    color: var(--White, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+
+  &Card {
+    max-width: 1110px;
+    padding: 62px 143px 63px 142px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(25px);
+    margin-bottom: 50px;
+
+    >p {
+      color: var(--White, #fff);
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: SF Pro Display;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &TextBox {
+    max-width: 663px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    >h3 {
+      color: var(--White, #fff);
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    >a {
+      padding: 14px 0px 13px 0px;
+      width: 100%;
+      display: flex;
+      max-width: 300px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      background: var(--Red, #e32652);
+      color: var(--White, #fff);
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      border: 3px solid var(--Red, #e32652);
+      transition: .4s;
+
+      &:hover {
+        background: none;
+        border-radius: 16px;
+        border: 3px solid var(--Red, #e32652);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0 0px;
+  }
+
+  .heroLeft {
+    width: 100%;
+    gap: 28px;
+
+    >h1 {
+      font-size: 33px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+
+    >.heroBtn {
+      padding: 12px 29px 11px 28px;
+      font-size: 14px;
+    }
+  }
+
+  .heroUnder {
+    >h2 {
+      font-size: 20px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+  }
+
+  .companyValues {
+    //background-position-x: -85px;
+    //background-size: cover;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 50% 90px;
+
+    >h1 {
+      font-size: 20px;
+    }
+  }
+
+  .ourAdvantages {
+    background: url(./../../public/home/our-advantages-mobile.png);
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &H {
+      font-size: 20px !important;
+    }
+
+    &Block {
+      grid-template-columns: repeat(2, 170px);
+      grid-template-rows: repeat(3, 170px);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+
+  .OurServices {
+    >h1 {
+      font-size: 20px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+
+    &Block {
+      grid-template-columns: 360px;
+      grid-template-rows: repeat(3, 180px) 40px;
+      grid-column-gap: px;
+      grid-row-gap: 20px;
+
+      >a {
+        padding: 11px 34px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .About {
+    &Title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    &Card {
+      padding: 25px 21px 24px 20px;
+      max-width: 360px;
+      margin-bottom: 30px;
+
+      >p {
+        font-size: 18px;
+      }
+    }
+
+    &TextBox {
+      gap: 13px;
+
+      >h3 {
+        font-size: 20px;
+      }
+
+      >a {
+        padding: 8px 38px;
+        max-width: 120px;
+        font-size: 15px;
+      }
+    }
+  }
+}
