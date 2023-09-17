@@ -244,6 +244,7 @@
       font-weight: 700;
       line-height: normal;
       border: 3px solid var(--Red, #e32652);
+      transition: .4s;
       &:hover {
         background: none;
         border-radius: 16px;
@@ -320,6 +321,32 @@
       grid-row-gap: 20px;
       > a {
         padding: 11px 34px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .About{
+    &Title{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    &Card{
+      padding: 25px 21px 24px 20px;
+      max-width: 360px;
+      margin-bottom: 30px;
+      >p{
+        font-size: 18px;
+      }
+    }
+    &TextBox{
+      gap: 13px;
+      >h3{
+        font-size: 20px;
+      }
+      >a{
+        padding: 8px 38px;
+        max-width: 120px;
         font-size: 15px;
       }
     }

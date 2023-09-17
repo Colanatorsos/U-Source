@@ -92,4 +92,11 @@
   .icons {
     gap: 23px;
   }
+  .privacy {
+  > div {
+    > p {
+      font-size: 10px !important;
+    }
+  }
+}
 }
