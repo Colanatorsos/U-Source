@@ -1,11 +1,12 @@
-.services {
-  padding: 1;
+.services{
+  text-align: center;
+  background: url(./../../../public/portfolio/bg.png) no-repeat;
+  background-position: calc(50% - 15px) 123px;
+  
 }
 .box {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 60px 0 80px;
   gap: 20px;
 }
@@ -19,6 +20,7 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+
 }
 .text {
   color: #fff;
@@ -31,7 +33,7 @@
   line-height: normal;
   width: 878px;
 }
-.services-card {
+.servicesCard {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
@@ -43,8 +45,10 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 120px;
+  width: 1110px;
+  height: 280px;
 }
-.card-title {
+.cardTitle {
   color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Headline 1 */
@@ -58,7 +62,7 @@
   /* width: 981px; */
   padding-bottom: 10px;
 }
-.card-text {
+.cardText {
   color: var(--White, #fff);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -75,7 +79,7 @@
 .row {
   padding-top: 51px;
 }
-.col-6 {
+.col6 {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -84,12 +88,12 @@
   align-items: center;
   gap: 40px;
   display: inline-flex;
-
-  padding: 30px 28px 85px 27px;
+  height: 359px;
+  padding: 30px 27px 54px 28px ;
   margin-right: 30px;
 }
 
-.tools-title {
+.toolsTitle {
   color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Headline 1 */
@@ -103,20 +107,19 @@
   /* width: 981px; */
 }
 
-.box-images {
+.boxImages {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 70px;
   background: none;
+
 }
 .images {
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
-  margin-top: 40px;
+
 }
-.container {
-  text-align: center;
-}
+
