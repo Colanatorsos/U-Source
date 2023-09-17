@@ -9,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
+    "animejs": "3.2.1",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.5.2",
     "swiper": "10.2.0"
   },
   "devDependencies": {
     "@types/node": "20.6.1",
     "@types/react": "18.2.21",
-    "sass": "^1.67.0",
+    "sass": "1.67.0",
     "typescript": "5.2.2"
   }
 }

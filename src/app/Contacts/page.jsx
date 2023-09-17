@@ -2,10 +2,16 @@
 import React, { useState } from 'react'
 import styles from './Contacts.module.css'
 import Image from 'next/image'
+import { useInView } from 'react-intersection-observer'
 
 const page = () => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [buttonText, setButtonText] = useState('Отправить');
+
+  const [sideRef, sideInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   const handleButtonClick = () => {
     setIsButtonClicked(true);
@@ -34,7 +40,10 @@ const page = () => {
                   {buttonText}
                 </button>
               </form>
-              <div className={styles.side} >
+              <div
+                ref={sideRef}
+                className={`${styles.side} ${sideInView ? styles.sideVisible : ''}`}
+              >
                 <h2 className={styles.sideTitle} >Информация</h2>
                 <ul>
                   <li>
@@ -42,11 +51,11 @@ const page = () => {
                     u.skillz.edu@gmail.com
                   </li>
                   <li>
-                    <Image src='/footer/call.svg' width={30} height={30}/>
+                    <Image src='/footer/call.svg' width={30} height={30} />
                     +996 554 201 506
                   </li>
                   <li>
-                    <Image src='/contacts/info.svg' width={30} height={30}/>
+                    <Image src='/contacts/info.svg' width={30} height={30} />
                     ул.Манаса 91/1
                   </li>
                   <li>
