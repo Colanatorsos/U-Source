@@ -21,7 +21,7 @@ const page = () => {
   return (
     <div>
       <section className={styles.section}>
-        <div className={styles.container}>
+        <div className='container'>
           <div className={styles.block}>
             <h1 className={styles.title}>Свяжитесь с нами</h1>
             <div className={styles.card}>
