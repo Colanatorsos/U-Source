@@ -19,7 +19,7 @@ const Slider = ({ children }) => {
       modules={[Autoplay, Pagination]}
       className="mySwiper">
       {children.map((el, idx) => (
-        <SwiperSlide>
+        <SwiperSlide key={idx}>
           <div className={styles.slider}>
             <h3>{el.title}</h3>
             <span></span>
