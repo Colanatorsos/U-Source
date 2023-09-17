@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Slider from '../components/Slider'
 import Card from '../components/home/Card'
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 
 
 const page = () => {
@@ -106,7 +108,8 @@ const page = () => {
         <h1>Ценности компании:</h1>
         <Slider children={companyValuesSliderContent} />
       </section>
-      <section className={styles.ourAdvantages}>
+      <section className={styles.ourAdvantages}
+      >
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.ourAdvantagesH}>Наши преимущества:</h1>
           <div className={styles.ourAdvantagesBlock}>
@@ -119,7 +122,7 @@ const page = () => {
         <p>В U! мы предлагаем разнообразные услуги, которые охватывают все аспекты разработки, от концепции до <br /> воплощения, с акцентом на инновации, качество и удовлетворение клиентов.</p>
         <div className="container d-flex justify-space-centre">
           <div className={styles.OurServicesBlock}>
-            <Card children={OurServicesContent}/>
+            <Card children={OurServicesContent} />
             <Link href='/Service'>Узнать подробнее</Link>
           </div>
         </div>
