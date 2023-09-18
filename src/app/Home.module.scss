@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 40px;
 
-  >h1 {
+  > h1 {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 48px;
@@ -18,7 +18,7 @@
     line-height: normal;
   }
 
-  >p {
+  > p {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 22px;
@@ -28,7 +28,7 @@
     line-height: normal;
   }
 
-  >.heroBtn {
+  > .heroBtn {
     //display: flex;
     //width: 255px;
     //height: 60px;
@@ -64,7 +64,7 @@
   align-items: center;
   gap: 30px;
 
-  >h2 {
+  > h2 {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -75,7 +75,7 @@
     line-height: normal;
   }
 
-  >p {
+  > p {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -100,7 +100,7 @@
   flex-direction: column;
   background: url(./../../public/home/company-Values.png);
 
-  >h1 {
+  > h1 {
     color: var(--White);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -146,7 +146,7 @@
   padding: 50px 0;
   text-align: center;
 
-  >h1 {
+  > h1 {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -156,7 +156,7 @@
     line-height: normal;
   }
 
-  >p {
+  > p {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -173,7 +173,7 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
-    >a {
+    > a {
       display: flex;
       justify-self: center;
       align-self: center;
@@ -219,7 +219,7 @@
     backdrop-filter: blur(25px);
     margin-bottom: 50px;
 
-    >p {
+    > p {
       color: var(--White, #fff);
       text-align: center;
       font-feature-settings: "clig" off, "liga" off;
@@ -238,7 +238,7 @@
     align-items: center;
     gap: 30px;
 
-    >h3 {
+    > h3 {
       color: var(--White, #fff);
       text-align: center;
       font-feature-settings: "clig" off, "liga" off;
@@ -248,7 +248,7 @@
       line-height: normal;
     }
 
-    >a {
+    > a {
       padding: 14px 0px 13px 0px;
       width: 100%;
       display: flex;
@@ -333,10 +333,7 @@
       font-size: 14px;
     }
     &Block {
-      grid-template-columns: 360px;
-      grid-template-rows: repeat(3, 180px) 40px;
-      grid-column-gap: px;
-      grid-row-gap: 20px;
+      grid-template-columns: repeat(2, 48%);
       > a {
         padding: 11px 34px;
         font-size: 15px;
@@ -352,7 +349,7 @@
       font-size: 20px !important;
     }
     &Block {
-      grid-template-columns: repeat(2, 170px);
+      grid-template-columns: repeat(2, 47%);
       grid-template-rows: repeat(3, 170px);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
@@ -360,19 +357,19 @@
   }
   .Portfolio {
     margin-top: 40px;
-    &Title{
+    &Title {
       font-size: 20px;
     }
-    &Desc{
+    &Desc {
       font-size: 14px;
     }
     &Grid {
-      grid-template-columns: repeat(2, 170px);
+      grid-template-columns: repeat(2, 47%);
       grid-template-rows: repeat(2, 170px);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
-    &Btn{
+    &Btn {
       padding: 11px 21px;
       font-size: 15px;
     }
@@ -388,26 +385,26 @@
     width: 100%;
     gap: 28px;
 
-    >h1 {
+    > h1 {
       font-size: 33px;
     }
 
-    >p {
+    > p {
       font-size: 14px;
     }
 
-    >.heroBtn {
+    > .heroBtn {
       padding: 12px 29px 11px 28px;
       font-size: 14px;
     }
   }
 
   .heroUnder {
-    >h2 {
+    > h2 {
       font-size: 20px;
     }
 
-    >p {
+    > p {
       font-size: 14px;
     }
   }
@@ -419,13 +416,10 @@
     background-repeat: no-repeat;
     background-position: 50% 90px;
 
-    >h1 {
+    > h1 {
       font-size: 20px;
     }
   }
-
-
-
 
   .ourAdvantages {
     background: url(./../../public/home/our-advantages-mobile.png);
@@ -438,7 +432,6 @@
     }
 
     &Block {
-      grid-template-columns: repeat(2, 170px);
       grid-template-rows: repeat(3, 170px);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
@@ -446,21 +439,21 @@
   }
 
   .OurServices {
-    >h1 {
+    > h1 {
       font-size: 20px;
     }
 
-    >p {
+    > p {
       font-size: 14px;
     }
 
     &Block {
-      grid-template-columns: 360px;
+      grid-template-columns: 100%;
       grid-template-rows: repeat(3, 180px) 40px;
       grid-column-gap: px;
       grid-row-gap: 20px;
 
-      >a {
+      > a {
         padding: 11px 34px;
         font-size: 15px;
       }
@@ -474,7 +467,7 @@
     }
     &Card {
       padding: 25px 21px 24px 20px;
-      max-width: 360px;
+      max-width: 100%;
       margin-bottom: 30px;
 
       > p {
@@ -487,7 +480,6 @@
         font-size: 20px;
       }
       > a {
-
         padding: 8px 38px;
         max-width: 120px;
         font-size: 15px;

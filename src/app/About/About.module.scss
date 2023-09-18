@@ -1,15 +1,17 @@
 .AboutCompany {
   margin-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
+  position: relative;
+  overflow: hidden;
   &GameIcon {
     position: absolute;
-    right: -100px;
-    top: -120px;
+    right: -5px;
+    top: -40px;
   }
   &MonitorIcon {
     position: absolute;
-    left: -95px;
-    bottom: -95px;
+    left: -5px;
+    bottom: 55px;
   }
   &Title {
     color: var(--White, #fff);
@@ -41,7 +43,6 @@
   }
 }
 .AboutCards {
-  margin-top: 100px;
   padding: 0px 165px 50px;
   &Card {
     display: flex;
@@ -80,6 +81,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
   padding: 0 47px 0 165px;
   > div:first-child {
     display: flex;
@@ -127,10 +129,29 @@
   margin-bottom: 50px;
   &Grid {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 32%);
     grid-template-rows: repeat(2, 350px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .OurSkills {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 30px;
+    > div:first-child {
+      padding: 19px 15px;
+      border-radius: 6px;
+      text-align: center;
+      > h3 {
+        font-size: 20px;
+      }
+      > p {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -164,28 +185,7 @@
       }
     }
   }
-  .OurSkills {
-    flex-direction: column;
-    padding: 0 15px;
-    gap: 30px;
-    > div:first-child {
-      padding: 19px 15px;
-      border-radius: 6px;
-      text-align: center;
-      > h3 {
-        font-size: 20px;
-      }
-      > p {
-        font-size: 14px;
-      }
-    }
-    > div:last-child {
-      > img {
-        width: 266.637px;
-        height: 150px;
-      }
-    }
-  }
+  
   .team {
     > h1 {
       font-size: 20px;
@@ -193,7 +193,7 @@
   }
   .CompanyHistory {
     &Grid {
-      grid-template-columns: repeat(2, 170px);
+      grid-template-columns: repeat(2, 47%);
       grid-template-rows: repeat(3, 170px);
       grid-column-gap: 20px;
       grid-row-gap: 20px;

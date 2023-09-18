@@ -82,18 +82,18 @@ const page = () => {
   return (
     <>
       <section className={styles.AboutCompany}>
+        <Image className={styles.AboutCompanyGameIcon} src='/about/game.svg' width={180} height={180} alt='bg' />
+        <Image className={styles.AboutCompanyMonitorIcon} src='/about/monitor-mobbile.svg' width={180} height={180} alt='bg' />
         <div className="container d-flex flex-d-column align-items-center">
           <h3 className={styles.AboutCompanyTitle}>О компании</h3>
           <div className={styles.AboutCompanyCard}>
-            {/*<Image className={styles.AboutCompanyGameIcon} src='/about/game.svg' width={180} height={180} alt='bg' />
-            <Image className={styles.AboutCompanyMonitorIcon} src='/about/monitor-mobbile.svg' width={180} height={180} alt='bg' />*/}
             <p>U! Веб-студия уже зарекомендовала себя в разработке посадочных страниц, интернет-магазинов, корпоративных сайтов и создании веб-приложений.
               Наши усилия направлены на то, чтобы вы вышли впереди конкурентов. Мы достигаем этой цели, обеспечивая высокую скорость загрузки ваших цифровых продуктов, повышенную функциональность и превосходную навигацию.</p>
           </div>
         </div>
       </section>
       <section className={styles.AboutCards}>
-        <div className="container d-flex justify-space-between">
+        <div className="container d-flex justify-space-between gap-25">
           {Cards.map((el, idx) => (
             <div className={styles.AboutCardsCard} key={idx}>
               <h5>{el.title}</h5>
