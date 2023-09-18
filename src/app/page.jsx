@@ -7,7 +7,7 @@ import Slider from '../components/home/Slider'
 import Card from '../components/home/Card'
 import Form from '../app/Contacts/page'
 import PortfolioCard from '../components/home/PorfolioCard'
-import 'animate.css'
+import anime from 'animejs/lib/anime.es'
 
 
 const page = () => {
@@ -126,7 +126,7 @@ const page = () => {
               <Link className={styles.heroBtn} href='/contacts'>Свяжитесь с нами </Link>
             </div>
             <div className='d-none d-md-block'>
-              <Image src='/Logo.svg' width={380.998} height={289.407} alt='logo' />
+              <Image src='/Logo.svg' priority={true} width={380.998} height={289.407} alt='logo' />
             </div>
           </div>
           <div className={styles.heroUnder} >
