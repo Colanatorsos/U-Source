@@ -32,7 +32,7 @@
   width: 54.875rem;
 }
 .servicesCard {
-  border-radius: 1px;
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
@@ -70,6 +70,7 @@
   font-weight: 500;
   line-height: normal;
   background: none;
+
 }
 .tools {
   padding-bottom: 6.25rem;
@@ -79,6 +80,7 @@
   justify-content: center;
   padding-top: 3.1875rem;
   gap: 1.875rem;
+
 }
 .col6 {
   border-radius: 1.25rem;
@@ -90,6 +92,7 @@
   gap: 2.5rem;
   display: inline-flex;
   height: 22.4375rem;
+  width: 33.75rem;
   padding: 1.875rem 1.6875rem 3.375rem 1.75rem;
 }
 
@@ -120,23 +123,20 @@
   background: none;
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 767px) {
+
   .services {
     position: relative;
-
     text-align: center;
-
     background-image: url(./../../../public/portfolio/figma.svg),
       url(./../../../public/portfolio/shield-tick.svg);
-
     background-position: 1.5625rem 5rem, 1.5625rem 33.3125rem;
-
     background-repeat: no-repeat;
   }
 
   .box {
     padding: 1.25rem 0 1.625rem;
-
     gap: 0.62rem;
   }
 
@@ -146,39 +146,28 @@
 
   .text {
     font-size: 0.875rem;
-
     width: 22.5rem;
   }
 
   .servicesCard {
     border-radius: 0.325rem;
-
     background: rgba(255, 255, 255, 0.15);
-
     box-shadow: 2.275px 2.275px 11.375px 1.3px rgba(0, 0, 0, 0.2);
-
     backdrop-filter: blur(8.125px);
-
     padding: 0.9375rem;
-
     gap: 0.62rem;
-
     margin-bottom: 1.88rem;
-
     width: 22.5rem;
-
     height: 12.5rem;
   }
 
   .cardTitle {
     font-size: 1.25rem;
-
     padding-bottom: 0.62rem;
   }
 
   .cardText {
     font-size: 0.875rem;
-
     width: 20.625rem;
   }
 
@@ -188,46 +177,122 @@
 
   .row {
     padding-top: 1.8rem;
-
+    display: flex;
     justify-content: center;
+    flex-direction: column;
 
-    display: block;
   }
   .col6 {
     border-radius: 0.325rem;
-
     background: rgba(255, 255, 255, 0.15);
-
     box-shadow: 2.275px 2.275px 11.375px 1.3px rgba(0, 0, 0, 0.2);
-
     backdrop-filter: blur(8.125px);
-
-    padding: 0.9375rem;
-
+    padding: 0.9375rem 0;
     gap: 0.62rem;
-
-    margin-bottom: 1.88rem;
-
     width: 22.5rem;
-
     height: 12.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .toolsTitle {
     padding-top: 1.55rem;
-
     font-size: 1.25rem;
   }
 
   .boxImages {
     padding-top: 1.25rem;
+    gap: 1.25rem;
+  }
 
+
+  .images {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .services {
+    position: relative;
+    text-align: center;
+    background-image: url(./../../../public/portfolio/figma.svg),
+      url(./../../../public/portfolio/shield-tick.svg);
+    background-position: 1.5625rem 5rem, 1.5625rem 33.3125rem;
+    background-repeat: no-repeat;
+  }
+
+  .box {
+    padding: 1.25rem 0 1.625rem;
+    gap: 0.62rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+
+  .text {
+    font-size: 0.875rem;
+    width: 22.5rem;
+  }
+
+  .servicesCard {
+    border-radius: 0.325rem;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 2.275px 2.275px 11.375px 1.3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8.125px);
+    padding: 0.9375rem;
+    gap: 0.62rem;
+    margin-bottom: 1.88rem;
+    width: 43.5rem;
+    height: 12.5rem;
+
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+    padding-bottom: 0.62rem;
+  }
+
+  .cardText {
+    font-size: 0.875rem;
+  }
+
+  .tools {
+    padding-bottom: 1.8rem;
+  }
+
+  .row {
+    padding-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .col6 {
+    border-radius: 0.325rem;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 2.275px 2.275px 11.375px 1.3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8.125px);
+    padding: 0.9375rem 0;
+    gap: 0.62rem;
+    width: 22.5rem;
+    height: 12.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .toolsTitle {
+    padding-top: 1.55rem;
+    font-size: 1.25rem;
+  }
+
+  .boxImages {
+    padding-top: 1.25rem;
     gap: 1.25rem;
   }
 
   .images {
     width: 1.875rem;
-
     height: 1.875rem;
   }
 }
