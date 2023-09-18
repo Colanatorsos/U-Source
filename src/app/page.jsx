@@ -1,10 +1,13 @@
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import styles from './Home.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import Slider from '../components/Slider'
+import Slider from '../components/home/Slider'
 import Card from '../components/home/Card'
-import React from 'react'
-import { useInView } from 'react-intersection-observer'
+import Form from '../app/Contacts/page'
+import PortfolioCard from '../components/home/PorfolioCard'
+import anime from 'animejs/lib/anime.es'
 
 
 const page = () => {
@@ -78,6 +81,40 @@ const page = () => {
       desc: 'Наши ведущие специалисты в области программирования создадут для вас мощные и эффективные веб-приложения, обеспечивая высочайший уровень функциональности и безопасности.'
     }
   ]
+  const PortfolioContent = [
+    {
+      id: "1",
+      images: "/portfolio/alfa-bank.svg",
+      title: "Альфа Банк",
+      description:
+        "Удобный онлайн-инструмент для управления финансами, предоставляющий клиентам доступ к счетам, переводам и платежам",
+      slideImage: "/portfolio/slide-image.svg",
+    },
+    {
+      id: "2",
+      images: "/portfolio/evraz.svg",
+      title: "ЕВРАЗ",
+      description:
+        "Наше приложение планирования задач помогло ЕВРАЗ управлять проектами и сроками на разных континентах",
+      slideImage: "/portfolio/slide-image.svg",
+    },
+    {
+      id: "3",
+      images: "/portfolio/gos-min-obr.svg",
+      title: "Гос - Мин образования КР",
+      description:
+        "Мы разработали веб-сайт для Минобразования КР, обеспечив легкий доступ к информации о программах, событиях и новостях",
+      slideImage: "/portfolio/slide-image.svg",
+    },
+    {
+      id: "4",
+      images: "/portfolio/gen-prokuratura.svg",
+      title: "Генпрокуратура РФ",
+      description:
+        "Разработали сайт для удобного анализа статистики правоохранительных органов",
+      slideImage: "/portfolio/slide-image.svg",
+    }
+  ];
   return (
     <div>
       <section className={styles.hero}>
@@ -89,7 +126,7 @@ const page = () => {
               <Link className={styles.heroBtn} href='/contacts'>Свяжитесь с нами </Link>
             </div>
             <div className='d-none d-md-block'>
-              <Image src='/Logo.svg' width={380.998} height={289.407} alt='logo' />
+              <Image src='/Logo.svg' priority={true} width={380.998} height={289.407} alt='logo' />
             </div>
           </div>
           <div className={styles.heroUnder} >
@@ -117,6 +154,16 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section className={styles.Portfolio}>
+        <div className="container d-flex flex-d-column align-items-center">
+          <h3 className={styles.PortfolioTitle}>Наши проекты</h3>
+          <p className={styles.PortfolioDesc}>Мы гордимся каждым из этих проектов, которые стали не только техническими достижениями, но и важными шагами к достижению целей наших клиентов.</p>
+          <div className={styles.PortfolioGrid}>
+            <PortfolioCard children={PortfolioContent} />
+          </div>
+          <Link href='Portfolio' className={styles.PortfolioBtn}>Еще больше проектов</Link>
+        </div>
+      </section>
       <section className={styles.OurServices}>
         <h1>Наши услуги</h1>
         <p>В U! мы предлагаем разнообразные услуги, которые охватывают все аспекты разработки, от концепции до <br /> воплощения, с акцентом на инновации, качество и удовлетворение клиентов.</p>
@@ -138,6 +185,9 @@ const page = () => {
             <Link href='/About'>Здесь</Link>
           </div>
         </div>
+      </section>
+      <section>
+        <Form />
       </section>
     </div>
   )

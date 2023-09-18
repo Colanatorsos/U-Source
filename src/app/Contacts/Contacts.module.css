@@ -25,6 +25,7 @@
 .section {
   margin-top: 60px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .card {
   position: relative;
@@ -166,4 +167,51 @@
 .sideVisible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1200px) {
+  .side{
+    right: -12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .card{
+    padding: 2.19rem 2.03rem;
+    height: 20.9375rem;
+    padding: 2.19rem 2.03rem;
+    height: 20.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title{
+    font-size: 1.25rem;
+  }
+  .text{
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+    width: 18.4375rem;
+    text-align: center;
+  }
+  .form{
+    gap: 1.5rem;
+  }
+  .input{
+    width: 18.75rem;
+    font-size: 0.9375rem;
+    height: 1.4375rem;
+  }
+  .input::placeholder{
+    font-size: 0.9375rem;
+  }
+  .side{
+    display: none;
+  }
+  .btn{
+    width: 8.75rem;
+    height: 2.5rem;
+    font-size: 0.9375rem;
+    align-self: center;
+  }
 }
