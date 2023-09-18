@@ -286,6 +286,7 @@
     line-height: normal;
     margin-bottom: 30px;
   }
+
   &Desc {
     color: var(--White, #fff);
     text-align: center;
@@ -296,6 +297,7 @@
     line-height: normal;
     margin-bottom: 50px;
   }
+
   &Btn {
     padding: 24px 52px 23px 51px;
     border-radius: 16px;
@@ -309,12 +311,14 @@
     margin-top: 50px;
     border: 3px solid var(--Red, #e32652);
     transition: 0.4s;
+
     &:hover {
       background: none;
       color: var(--Red);
       border: 3px solid var(--Red, #e32652);
     }
   }
+
   &Grid {
     display: grid;
     grid-template-columns: repeat(2, 540px);
@@ -326,31 +330,37 @@
 
 @media (max-width: 1130px) {
   .OurServices {
-    > h1 {
+    >h1 {
       font-size: 20px;
     }
-    > p {
+
+    >p {
       font-size: 14px;
     }
+
     &Block {
       grid-template-columns: 360px;
       grid-template-rows: repeat(3, 180px) 40px;
       grid-column-gap: px;
       grid-row-gap: 20px;
-      > a {
+
+      >a {
         padding: 11px 34px;
         font-size: 15px;
       }
     }
   }
+
   .ourAdvantages {
     background: url(./../../public/home/our-advantages-mobile.png);
     margin: 0;
     background-position: center;
     background-repeat: no-repeat;
+
     &H {
       font-size: 20px !important;
     }
+
     &Block {
       grid-template-columns: repeat(2, 170px);
       grid-template-rows: repeat(3, 170px);
@@ -358,21 +368,26 @@
       grid-row-gap: 20px;
     }
   }
+
   .Portfolio {
     margin-top: 40px;
-    &Title{
+
+    &Title {
       font-size: 20px;
     }
-    &Desc{
+
+    &Desc {
       font-size: 14px;
     }
+
     &Grid {
       grid-template-columns: repeat(2, 170px);
       grid-template-rows: repeat(2, 170px);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
-    &Btn{
+
+    &Btn {
       padding: 11px 21px;
       font-size: 15px;
     }
@@ -472,21 +487,25 @@
       font-size: 20px;
       margin-bottom: 30px;
     }
+
     &Card {
       padding: 25px 21px 24px 20px;
       max-width: 360px;
       margin-bottom: 30px;
 
-      > p {
+      >p {
         font-size: 18px;
       }
     }
+
     &TextBox {
       gap: 13px;
-      > h3 {
+
+      >h3 {
         font-size: 20px;
       }
-      > a {
+
+      >a {
 
         padding: 8px 38px;
         max-width: 120px;
