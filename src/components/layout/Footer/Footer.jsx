@@ -21,7 +21,7 @@ const Footer = () => {
             Школа креативных профессий
           </div>
           <div className={styles.icons}>
-            <a href='tel:+996554201506'>
+            <a href='tel:+996554201506' alt='call' >
               <Image
                 src='/footer/call.svg'
                 width={24}
