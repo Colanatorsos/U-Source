@@ -64,7 +64,7 @@ const page = () => {
           <div className={styles.row}>
             <div className={styles.col6}>
               <h2 className={styles.toolsTitle}>Разработка</h2>
-              <p className={styles.cardText}>
+              <p className={styles.cardText} style={{width: "485"}}>
                 При разработке сайта мы полагаемся на современные и
                 разнообразные инструменты, чтобы создать функциональный сайт.
               </p>

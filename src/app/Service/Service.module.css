@@ -32,7 +32,7 @@
   width: 54.875rem;
 }
 .servicesCard {
-  border-radius: 1px;
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
@@ -70,6 +70,7 @@
   font-weight: 500;
   line-height: normal;
   background: none;
+
 }
 .tools {
   padding-bottom: 6.25rem;
@@ -79,6 +80,7 @@
   justify-content: center;
   padding-top: 3.1875rem;
   gap: 1.875rem;
+
 }
 .col6 {
   border-radius: 1.25rem;
@@ -90,6 +92,7 @@
   gap: 2.5rem;
   display: inline-flex;
   height: 22.4375rem;
+  width: 33.75rem;
   padding: 1.875rem 1.6875rem 3.375rem 1.75rem;
 }
 
@@ -248,7 +251,6 @@
 
   .cardText {
     font-size: 0.875rem;
-    width: 20.625rem;
   }
 
   .tools {
