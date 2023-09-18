@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3.75rem 0 -1.25rem;
+  padding: 3.75rem 0 6rem;
 }
 
 .container {
@@ -146,12 +146,15 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .projects {
+    padding: 0.75rem 0 2rem;
+  }
   .title {
     font-size: 1.25rem;
     padding-bottom: 1.25rem;
   }
   .card {
-    width: 22.5rem;
+    width: 21.5rem;
     height: 7.5rem;
     border-radius: 0.32431rem;
     background: rgba(255, 255, 255, 0.15);
@@ -209,7 +212,10 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .projects {
+    padding: 0.75rem 0 3rem;
+  }
   .title {
     font-size: 1.25rem;
     padding-bottom: 1.25rem;
