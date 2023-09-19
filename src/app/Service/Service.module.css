@@ -4,10 +4,16 @@
   background-position: calc(50% - 15px) 123px;
 }
 .svgJs {
-  display: none;
+  position: absolute;
+  top: -308px;
+  right: 23px;
+  z-index: 0;
 }
 .svgO {
-  display: none;
+  position: absolute;
+  top: -90px;
+  right: 23px;
+  z-index: 0;
 }
 .box {
   display: inline-flex;
@@ -137,12 +143,14 @@
     background-repeat: no-repeat;
   }
   .svgJs {
+    display: flex;
     position: absolute;
     top: 308px;
     right: 23px;
     z-index: 10;
   }
   .svgO {
+    display: flex;
     position: absolute;
     top: 770px;
     right: 23px;
