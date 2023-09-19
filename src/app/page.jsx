@@ -70,15 +70,18 @@ const page = () => {
   const OurServicesContent = [
     {
       title: 'Программирование и разработка',
-      desc: 'Наши ведущие специалисты в области программирования создадут для вас мощные и эффективные веб-приложения, обеспечивая высочайший уровень функциональности и безопасности.'
+      desc: 'Наши ведущие специалисты в области программирования создадут для вас мощные и эффективные веб-приложения, обеспечивая высочайший уровень функциональности и безопасности.',
+      bg: '/home/python.svg'
     },
     {
       title: 'Дизайн и пользовательский опыт',
-      desc: 'Наши дизайнеры превратят ваши идеи в визуально привлекательные и удобные приложения. Мы создаем уникальные дизайнерские решения, которые будут отражать вашу уникальную идентичность.'
+      desc: 'Наши дизайнеры превратят ваши идеи в визуально привлекательные и удобные приложения. Мы создаем уникальные дизайнерские решения, которые будут отражать вашу уникальную идентичность.',
+      bg: '/home/figma.svg'
     },
     {
       title: 'Управление проектами и продуктами',
-      desc: 'Наши менеджеры по продуктам и проектам будут работать в тесном сотрудничестве с вами, чтобы обеспечить эффективное управление проектом, соблюдение сроков и достижение поставленных целей.'
+      desc: 'Наши менеджеры по продуктам и проектам будут работать в тесном сотрудничестве с вами, чтобы обеспечить эффективное управление проектом, соблюдение сроков и достижение поставленных целей.',
+      bg: '/home/chart-2.svg'
     }
   ]
   const PortfolioContent = [
@@ -116,7 +119,7 @@ const page = () => {
     }
   ];
   return (
-    <div>
+    <div style={{overflow: 'hidden'}}>
       <section className={styles.hero}>
         <div className="container">
           <div className='d-flex justify-space-between align-items-center'>
@@ -143,13 +146,22 @@ const page = () => {
       </section>
       <section className={styles.companyValues}>
         <h1>Ценности компании:</h1>
-        <Slider children={companyValuesSliderContent} />
+        <div>
+          <Image src="/home/shield-search.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/flash.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/global.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/cup.svg" width={160} height={160} alt='bg' />
+          <Slider children={companyValuesSliderContent} />
+        </div>
       </section>
-      <section className={styles.ourAdvantages}
-      >
+      <section className={styles.ourAdvantages}>
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.ourAdvantagesH}>Наши преимущества:</h1>
           <div className={styles.ourAdvantagesBlock}>
+            <Image src="/home/lamp-charge.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/clock.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/messages-2.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/verify.svg" width={160} height={160} alt='bg' />
             <Card children={ourAdvantagesContent} />
           </div>
         </div>
