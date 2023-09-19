@@ -2,13 +2,13 @@
 import Image from 'next/image'
 import styles from './PortfolioCard.module.scss'
 import anime from 'animejs/lib/anime.es'
-import React, { useRef, useEffect } from "react";
+import React, {  useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
 
-const PortfolioCard = ({ children }) => {
+const PortfolioCard = React.memo(({ children }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const animateElements = (elements) => {
@@ -16,7 +16,7 @@ const PortfolioCard = ({ children }) => {
       const fromLeft = index % 2 === 0;
       anime({
         targets: element,
-        translateX: inView ? 0 : fromLeft ? -200 : 200,
+        translateX: inView ? 0 : fromLeft ? -150 : 150,
         opacity: inView ? 1 : 0,
         duration: 1000,
         easing: 'easeOutQuad',
@@ -46,6 +46,6 @@ const PortfolioCard = ({ children }) => {
       ))}
     </>
   )
-}
+});
 
-export default PortfolioCard
+export default PortfolioCard;

@@ -1,6 +1,8 @@
-import React from "react";
+'use client'
 import styles from "./../Portfolio/Portfolio.module.css";
 import Card from "../../components/layout/Card/Card";
+import anime from "animejs";
+import React, { useEffect } from "react";
 
 const page = () => {
   const cardsData = [
