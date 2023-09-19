@@ -12,10 +12,10 @@ const Slider = ({ children }) => {
       spaceBetween={100}
       slidesPerView={'auto'}
       centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
+      //autoplay={{
+      //  delay: 2500,
+      //  disableOnInteraction: false,
+      //}}
       modules={[Autoplay, Pagination]}
       className="mySwiper">
       {children.map((el, idx) => (

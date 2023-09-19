@@ -56,9 +56,17 @@
       height: 2px;
       margin: 4px 0;
     }
-    >p{
+    > p {
       font-size: 10px;
-
+    }
+  }
+  .PortfolioCard:nth-child(3) {
+    > p {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

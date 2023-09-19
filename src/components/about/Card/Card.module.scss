@@ -16,7 +16,7 @@
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    font-size: 22px;
+    font-size: calc(var(--index) * 1.022);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -25,7 +25,7 @@
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    font-size: 14px;
+    font-size: calc(var(--index) * 0.65);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -41,12 +41,6 @@
     }
     .OurServicesBlockP {
       font-size: 14px !important;
-    }
-    > h4 {
-      font-size: 14px;
-    }
-    > p {
-      font-size: 10px;
     }
   }
 }

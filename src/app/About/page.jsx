@@ -82,18 +82,21 @@ const page = () => {
   return (
     <>
       <section className={styles.AboutCompany}>
+
         <div className="container d-flex flex-d-column align-items-center">
           <h3 className={styles.AboutCompanyTitle}>О компании</h3>
-          <div className={styles.AboutCompanyCard}>
-            {/*<Image className={styles.AboutCompanyGameIcon} src='/about/game.svg' width={180} height={180} alt='bg' />
-            <Image className={styles.AboutCompanyMonitorIcon} src='/about/monitor-mobbile.svg' width={180} height={180} alt='bg' />*/}
-            <p>U! Веб-студия уже зарекомендовала себя в разработке посадочных страниц, интернет-магазинов, корпоративных сайтов и создании веб-приложений.
-              Наши усилия направлены на то, чтобы вы вышли впереди конкурентов. Мы достигаем этой цели, обеспечивая высокую скорость загрузки ваших цифровых продуктов, повышенную функциональность и превосходную навигацию.</p>
+          <div>
+            <Image className={styles.AboutCompanyGameIcon} src='/about/game.svg' width={180} height={180} alt='bg' />
+            <Image className={styles.AboutCompanyMonitorIcon} src='/about/monitor-mobbile.svg' width={180} height={180} alt='bg' />
+            <div className={styles.AboutCompanyCard}>
+              <p>U! Веб-студия уже зарекомендовала себя в разработке посадочных страниц, интернет-магазинов, корпоративных сайтов и создании веб-приложений.
+                Наши усилия направлены на то, чтобы вы вышли впереди конкурентов. Мы достигаем этой цели, обеспечивая высокую скорость загрузки ваших цифровых продуктов, повышенную функциональность и превосходную навигацию.</p>
+            </div>
           </div>
         </div>
       </section>
       <section className={styles.AboutCards}>
-        <div className="container d-flex justify-space-between">
+        <div className="container d-flex justify-space-between gap-25">
           {Cards.map((el, idx) => (
             <div className={styles.AboutCardsCard} key={idx}>
               <h5>{el.title}</h5>
@@ -104,9 +107,13 @@ const page = () => {
       </section>
       <section className={styles.OurSkills}>
         <div>
-          <h3>Наши умения и навыки</h3>
-          <p>U-Skillz - это студия, которая воплощает проекты любой сложности, создавая веб-сайты, мобильные приложения и обеспечивая SEO-продвижение.
-            Наше дизайн-направление также предоставляет услуги по разработке логотипов, корпоративной айдентики и созданию креативных веб-продуктов для компаний. Кроме того, команда U-SkillZ обеспечивает техническую поддержку и доработку ваших веб-сайтов. После завершения разработки предлагаем настройку рекламных кампаний и долгосрочное сопровождение вашего проекта.</p>
+          <Image className={styles.OurSkillsIcon} src="/about/flash-circle.svg" width={180} height={180}/>
+          <Image className={styles.OurSkillsIcon} src="/about/emoji-happy.svg" width={180} height={180}/>
+          <div>
+            <h3>Наши умения и навыки</h3>
+            <p>U-Skillz - это студия, которая воплощает проекты любой сложности, создавая веб-сайты, мобильные приложения и обеспечивая SEO-продвижение.
+              Наше дизайн-направление также предоставляет услуги по разработке логотипов, корпоративной айдентики и созданию креативных веб-продуктов для компаний. Кроме того, команда U-SkillZ обеспечивает техническую поддержку и доработку ваших веб-сайтов. После завершения разработки предлагаем настройку рекламных кампаний и долгосрочное сопровождение вашего проекта.</p>
+          </div>
         </div>
         <Macbook />
       </section>
@@ -117,8 +124,14 @@ const page = () => {
       <section className={styles.CompanyHistory}>
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.CompanyHistoryH}>Наши преимущества:</h1>
-          <div className={styles.CompanyHistoryGrid}>
-            <Card children={CompanyHistoryData} />
+          <div>
+            <Image src="/about/calendar.svg" width={180} height={180}/>
+            <Image src="/about/box.svg" width={180} height={180} />
+            <Image src="/about/flag.svg" width={180} height={180} />
+            <Image src="/about/buildings-2.svg" width={180} height={180} />
+            <div className={styles.CompanyHistoryGrid}>
+              <Card children={CompanyHistoryData} />
+            </div>
           </div>
         </div>
       </section>
