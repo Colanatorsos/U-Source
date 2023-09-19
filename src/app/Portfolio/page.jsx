@@ -81,6 +81,11 @@ const page = () => {
               title={card.title}
               description={card.description}
               slideImage={card.slideImage}
+              animationClass={
+                index % 2 === 0
+                  ? styles.cardSlideFromLeft
+                  : styles.cardSlideFromRight
+              }
             />
           ))}
         </div>

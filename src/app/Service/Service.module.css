@@ -3,6 +3,12 @@
   background: url(./../../../public/portfolio/bg.png) no-repeat;
   background-position: calc(50% - 15px) 123px;
 }
+.svgJs {
+  display: none;
+}
+.svgO {
+  display: none;
+}
 .box {
   display: inline-flex;
   flex-direction: column;
@@ -133,13 +139,13 @@
   .svgJs {
     position: absolute;
     top: 308px;
-   right: 23px;
+    right: 23px;
     z-index: 10;
   }
-  .svgO{
+  .svgO {
     position: absolute;
     top: 770px;
-   right: 23px;
+    right: 23px;
     z-index: 10;
   }
   .box {
@@ -229,13 +235,13 @@
   .svgJs {
     position: absolute;
     top: 308px;
-   right: 23px;
+    right: 23px;
     z-index: 10;
   }
-  .svgO{
+  .svgO {
     position: absolute;
     top: 770px;
-   right: 23px;
+    right: 23px;
     z-index: 10;
   }
   .box {
