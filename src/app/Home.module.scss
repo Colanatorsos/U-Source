@@ -292,6 +292,7 @@
     line-height: normal;
     margin-bottom: 30px;
   }
+
   &Desc {
     color: var(--White, #fff);
     text-align: center;
@@ -302,6 +303,7 @@
     line-height: normal;
     margin-bottom: 50px;
   }
+
   &Btn {
     padding: 24px 52px 23px 51px;
     border-radius: 16px;
@@ -315,12 +317,14 @@
     margin-top: 50px;
     border: 3px solid var(--Red, #e32652);
     transition: 0.4s;
+
     &:hover {
       background: none;
       color: var(--Red);
       border: 3px solid var(--Red, #e32652);
     }
   }
+
   &Grid {
     display: grid;
     grid-template-columns: repeat(2, 540px);
@@ -338,6 +342,7 @@
     > p {
       font-size: 14px;
     }
+
     &Block {
       grid-template-columns: repeat(2, 48%);
       > a {
@@ -346,14 +351,17 @@
       }
     }
   }
+
   .ourAdvantages {
     background: url(./../../public/home/our-advantages-mobile.png);
     margin: 0;
     background-position: center;
     background-repeat: no-repeat;
+
     //&H {
     //  font-size: 20px !important;
     //}
+
     &Block {
       grid-template-columns: repeat(2, 47%);
       grid-template-rows: repeat(3, 170px);
@@ -361,14 +369,17 @@
       grid-row-gap: 20px;
     }
   }
+
   .Portfolio {
     margin-top: 40px;
     //&Title {
     //  font-size: 20px;
     //}
+
     &Desc {
       font-size: 14px;
     }
+
     &Grid {
       grid-template-columns: repeat(2, 47%);
       grid-template-rows: repeat(2, 170px);
@@ -471,15 +482,17 @@
       //font-size: 20px;
       margin-bottom: 30px;
     }
+
     &Card {
       padding: 25px 21px 24px 20px;
       max-width: 100%;
       margin-bottom: 30px;
 
-      > p {
+      >p {
         font-size: 18px;
       }
     }
+
     &TextBox {
       gap: 13px;
       //> h3 {
