@@ -158,8 +158,8 @@
     width: 21.5rem;
     height: 7.5rem;
     border-radius: 0.32431rem;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(8.108108520507812px);
     margin-bottom: 0.6rem;
     gap: 2.07938rem;
@@ -225,8 +225,8 @@
     width: 37.5rem;
     height: 10.25rem;
     border-radius: 0.52431rem;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(8.108108520507812px);
     margin-bottom: 1rem;
     gap: 2.07938rem;
