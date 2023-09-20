@@ -9,17 +9,17 @@ function Card({ title, description, images, slideImage }) {
         <Image
           src={images}
           alt="Alfa Bank"
-          className={styles.images}    
+          className={styles.images}
           width={120}
           height={120}
         />
-        <h3 className= {styles.name}>{title}</h3>
-        <p className=  {styles.info}>{description}</p>
+        <h3 className={styles.name}>{title}</h3>
+        <p className={styles.info}>{description}</p>
       </div>
-      <Link className= {styles.btn} href="/">
-          Перейти на сайт
-        </Link>
-      <div className=  {styles.rightCard}>         
+      <Link className={styles.btn} href="/">
+        Перейти на сайт
+      </Link>
+      <div className={styles.rightCard}>
         <Image
           src={slideImage}
           alt="Описание изображения"
@@ -29,7 +29,7 @@ function Card({ title, description, images, slideImage }) {
         />
         <div className={styles.nav}>
           <svg
-            className= {styles.svgNav}
+            className={styles.svgNav}
             xmlns="http://www.w3.org/2000/svg"
             width="13"
             height="12"
@@ -39,7 +39,7 @@ function Card({ title, description, images, slideImage }) {
             <circle cx="6.5" cy="6" r="6" fill="white" />
           </svg>
           <svg
-            className= {styles.svgNav}
+            className={styles.svgNav}
             xmlns="http://www.w3.org/2000/svg"
             width="13"
             height="12"
@@ -49,7 +49,7 @@ function Card({ title, description, images, slideImage }) {
             <circle cx="6.5" cy="6" r="6" fill="#808080" />
           </svg>
           <svg
-            className= {styles.svgNav}
+            className={styles.svgNav}
             xmlns="http://www.w3.org/2000/svg"
             width="13"
             height="12"
@@ -59,7 +59,7 @@ function Card({ title, description, images, slideImage }) {
             <circle cx="6.5" cy="6" r="6" fill="#808080" />
           </svg>
           <svg
-            className= {styles.svgNav}
+            className={styles.svgNav}
             xmlns="http://www.w3.org/2000/svg"
             width="13"
             height="12"
