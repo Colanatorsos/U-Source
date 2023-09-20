@@ -24,6 +24,13 @@ const page = () => {
               (UX) - это неотъемлемые элементы успешного дизайна.
             </p>
           </div>
+          <Image
+              src="/service/js-bg.svg"
+              alt="Описание изображения"
+              className={styles.svgJs}
+              width={68}
+              height={64}
+            />
           <div className={styles.servicesCard}>
             <h2 className={styles.cardTitle}>Разработка </h2>
             <p className={styles.cardText}>
@@ -45,6 +52,13 @@ const page = () => {
               результатов.
             </p>
           </div>
+          <Image
+              src="/service/user-search.svg"
+              alt="Описание изображения"
+              className={styles.svgO}
+              width={64}
+              height={62}
+            />
           <div className={styles.servicesCard}>
             <h2 className={styles.cardTitle}>SEO - оптимизация </h2>
             <p className={styles.cardText}>
@@ -64,7 +78,7 @@ const page = () => {
           <div className={styles.row}>
             <div className={styles.col6}>
               <h2 className={styles.toolsTitle}>Разработка</h2>
-              <p className={styles.cardText} style={{width: "485"}}>
+              <p className={styles.cardText} style={{ width: "485" }}>
                 При разработке сайта мы полагаемся на современные и
                 разнообразные инструменты, чтобы создать функциональный сайт.
               </p>

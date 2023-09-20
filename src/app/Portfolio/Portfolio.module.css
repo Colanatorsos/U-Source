@@ -278,3 +278,31 @@
     height: 0.25rem;
   }
 }
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.cardSlideFromLeft {
+  animation: slideFromLeft 1s forwards;
+}
+
+.cardSlideFromRight {
+  animation: slideFromRight 1s forwards;
+}
