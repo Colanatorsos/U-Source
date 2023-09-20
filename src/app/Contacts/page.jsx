@@ -11,7 +11,7 @@ const USER_ID = 'RUXfSdoUIcL5hhX2N';
 
 emailjs.init(USER_ID);
 
-const page = () => {
+const page = React.memo(() => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [buttonText, setButtonText] = useState('Отправить');
   const [formData, setFormData] = useState({
@@ -134,6 +134,5 @@ const page = () => {
       </section>
     </div>
   );
-};
-
+})
 export default page;
