@@ -1,10 +1,12 @@
 'use client'
 import styles from './Card.module.scss'
 import anime from 'animejs/lib/anime.es'
-import { useRef, useEffect } from "react";
+import Image from 'next/image';
+import React, { useRef, useEffect } from "react"
 import { useInView } from 'react-intersection-observer';
 
-const Card = ({ children }) => {
+
+const Card = React.memo(({ children }) => {
   const cardRefs = useRef([]);
   const [inViewRef, inView] = useInView({
     triggerOnce: true,
@@ -53,21 +55,21 @@ const Card = ({ children }) => {
   return (
     <>
       {children.map((el, idx) => (
-        <div
-          key={idx}
-          className={`${styles.card} animated-card`}
-          ref={(ref) => {
-            cardRefs.current[idx] = ref;
-            inViewRef(ref);
-          }}
-          style={{ opacity: 0, transform: 'translateY(0px)' }}
-        >
-          <h4 className={children.length === 3 ? styles.OurServicesBlockH : ''}>{el.title}</h4>
-          <p className={children.length === 3 ? styles.OurServicesBlockP : ''}>{el.desc}</p>
-        </div>
+          <div
+            key={idx}
+            className={`${styles.card} animated-card`}
+            ref={(ref) => {
+              cardRefs.current[idx] = ref;
+              inViewRef(ref);
+            }}
+            style={{ opacity: 0, transform: 'translateY(0px)' }}
+          >
+            <h4 className={children.length === 3 ? styles.OurServicesBlockH : ''}>{el.title}</h4>
+            <p className={children.length === 3 ? styles.OurServicesBlockP : ''}>{el.desc}</p>
+          </div>
       ))}
     </>
   );
-}
+})
 
 export default Card;

@@ -13,7 +13,7 @@ const Slider = ({ children }) => {
       slidesPerView={'auto'}
       centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
       }}
       modules={[Autoplay, Pagination]}
