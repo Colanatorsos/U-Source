@@ -2,10 +2,11 @@
 import styles from './Card.module.scss'
 import anime from 'animejs/lib/anime.es'
 import Image from 'next/image';
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react"
 import { useInView } from 'react-intersection-observer';
 
-const Card = ({ children }) => {
+
+const Card = React.memo(({ children }) => {
   const cardRefs = useRef([]);
   const [inViewRef, inView] = useInView({
     triggerOnce: true,
@@ -69,6 +70,6 @@ const Card = ({ children }) => {
       ))}
     </>
   );
-}
+})
 
 export default Card;

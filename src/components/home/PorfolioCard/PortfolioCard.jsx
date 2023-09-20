@@ -6,30 +6,6 @@ import React, { useRef, useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
 
 const PortfolioCard = ({ children }) => {
-  //const [ref, inView] = useInView({
-  //  triggerOnce: true,
-  //  threshold: 0.2,
-  //});
-
-  //const animateElements = (elements) => {
-  //  elements.forEach((element, index) => {
-  //    const fromLeft = index % 2 === 0;
-  //    anime({
-  //      targets: element,
-  //      translateX: inView ? 0 : fromLeft ? -200 : 200,
-  //      opacity: inView ? 1 : 0,
-  //      duration: 1000,
-  //      easing: 'easeOutQuad',
-  //      delay: anime.stagger(100),
-  //    });
-  //  });
-  //};
-
-  //useEffect(() => {
-  //  const elementsToAnimate = document.querySelectorAll('.animate-element');
-  //  animateElements(elementsToAnimate);
-  //}, [inView]);
-
   const cardRefs = useRef([]);
   const [inViewRef, inView] = useInView({
     triggerOnce: true,
@@ -97,6 +73,6 @@ const PortfolioCard = ({ children }) => {
       ))}
     </>
   )
-}
+};
 
-export default PortfolioCard
+export default PortfolioCard;
