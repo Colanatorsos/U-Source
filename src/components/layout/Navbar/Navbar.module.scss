@@ -40,6 +40,15 @@
   }
 }
 
+.link {
+}
+
+.active {
+  &::before {
+    opacity: 1;
+  }
+}
+
 .btn {
   display: flex;
   width: 160px;
