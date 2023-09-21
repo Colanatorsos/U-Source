@@ -702,3 +702,11 @@
     }
   }
 }
+
+@media (max-width: 350px) {
+  .Portfolio{
+    &Grid{
+      grid-template-columns: repeat(2, 46%);
+    }
+  }
+}
