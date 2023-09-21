@@ -85,6 +85,9 @@
 }
 .tools {
   padding-bottom: 6.25rem;
+  text-align: center;
+  background: url(./../../../public/service/bg.svg) no-repeat;
+  background-position: calc(50% - 7px) 73px;
 }
 .row {
   display: flex;

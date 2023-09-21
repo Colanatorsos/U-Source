@@ -183,7 +183,28 @@ const page = () => {
         <p>В U! мы предлагаем разнообразные услуги, которые охватывают все аспекты разработки, от концепции до <br /> воплощения, с акцентом на инновации, качество и удовлетворение клиентов.</p>
         <div className="container d-flex justify-space-centre">
           <div className={styles.OurServicesBlock}>
+          <Image
+              src="/home/figma-min.svg"
+              alt="Описание изображения"
+              className={styles.svgFigma}
+              width={64}
+              height={62}
+            />
             <Card children={OurServicesContent} />
+            <Image
+              src="/home/python-min.svg"
+              alt="Описание изображения"
+              className={styles.svgPyt}
+              width={64}
+              height={62}
+            />
+             <Image
+              src="/home/chart-min.svg"
+              alt="Описание изображения"
+              className={styles.svgChart}
+              width={64}
+              height={62}
+            />
             <Link href='/Service'>Узнать подробнее</Link>
           </div>
         </div>
