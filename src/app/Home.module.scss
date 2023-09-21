@@ -185,7 +185,26 @@
   gap: 30px;
   padding: 50px 0;
   text-align: center;
-
+  background: url(/home/our-services.svg) no-repeat;
+  background-position: calc(50% - 2px) 29px;
+  .svgFigma {
+    position: absolute;
+    top: -88px;
+    right: 23px;
+    z-index: 10;
+  }
+  .svgPyt {
+    position: absolute;
+    top: -90px;
+    right: 23px;
+    z-index: 10;
+  }
+  .svgChart {
+    position: absolute;
+    top: -90px;
+    right: 23px;
+    z-index: 10;
+  }
   > h1 {
     color: var(--White, #fff);
     text-align: center;
@@ -372,7 +391,130 @@
     grid-row-gap: 30px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1129px) {
+  .OurServices {
+    background-image: url(/home/figma-min.svg), url(/home/python-min.svg),
+      url(/home/chart-min.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(50% - -365px) 203px, calc(50% - 353px) 143px,
+      calc(50% - 365px) 583px;
+    &Block {
+      display: grid;
+      grid-column-gap: 30px;
+      grid-row-gap: 0px;
 
+      > a {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        padding: 26px 75px 25px 74px;
+        border-radius: 16px;
+        background: var(--Red, #e32652);
+        color: var(--White, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        transition: 0.4s;
+        margin-bottom: 60px;
+
+        &:hover {
+          background: none;
+          padding: 11px 34px;
+          color: var(--Red);
+          border: 1px solid var(--Red, #e32652);
+        }
+      }
+    }
+  }
+  .About {
+    background-image: url(/home/command-min.svg), url(/home/scroll-min.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(50% - -336px) 470px, calc(50% - 333px) 29px;
+    &Title {
+      color: var(--White, #fff);
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      //font-size: 36px;
+      font-size: calc(var(--index) * 1.67);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    &Card {
+      width: 690px;
+      height: 440px;
+      padding: calc(var(--index) * 3.63) calc(var(--index) * 6.5);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(25px);
+      margin-bottom: 50px;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      > p {
+        width: 590px;
+
+        color: var(--White, #fff);
+        text-align: center;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: SF Pro Display;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    &TextBox {
+      max-width: 663px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      > h3 {
+        color: var(--White, #fff);
+        text-align: center;
+        font-feature-settings: "clig" off, "liga" off;
+        //font-size: 36px;
+        font-size: calc(var(--index) * 1.67);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      > a {
+        padding: 14px 0px 13px 0px;
+        width: 100%;
+        display: flex;
+        max-width: 300px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        background: var(--Red, #e32652);
+        color: var(--White, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: 3px solid var(--Red, #e32652);
+        transition: 0.4s;
+
+        &:hover {
+          background: none;
+          border-radius: 16px;
+          border: 3px solid var(--Red, #e32652);
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1130px) {
   .OurServices {
     //> h1 {
@@ -432,6 +574,19 @@
 }
 
 @media (max-width: 768px) {
+  .companyValues {
+    background-image: url(/home/shield-search-min.svg) 50px 50px,
+      url(/home/.svg), url(/home/.svg), url(/home/.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(50% - -180px) 233px, calc(50% - 180px) 17px,
+      calc(50% - -180px) 233px, calc(50% - 180px) 17px;
+
+  }
+  .About {
+    background-image: url(/home/command-min.svg), url(/home/scroll-min.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(50% - -180px) 233px, calc(50% - 180px) 17px;
+  }
   .hero {
     padding: 60px 0 0px;
   }
@@ -480,8 +635,29 @@
   }
 
   .OurServices {
+    // background: url(/home/our-services-min.svg) no-repeat;
+    // background-position: calc(50% - 2px) 29px;
+    position: relative;
     > p {
       font-size: 14px;
+    }
+    .svgFigma {
+      position: absolute;
+      top: 162px;
+      right: -3px;
+      z-index: 10;
+    }
+    .svgPyt {
+      position: absolute;
+      top: 372px;
+      left: -3px;
+      z-index: 10;
+    }
+    .svgChart {
+      position: absolute;
+      top: 580px;
+      right: -3px;
+      z-index: 10;
     }
 
     &Block {

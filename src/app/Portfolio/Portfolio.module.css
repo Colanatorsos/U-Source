@@ -31,8 +31,9 @@
   height: 21.875rem;
   flex-shrink: 0;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.20);
+  -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   display: flex;
   margin-bottom: 3.5rem;
@@ -40,7 +41,7 @@
   transition: all 0.5s ease;
 }
 .card:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
 }
 .card:hover .rightCard {
@@ -157,8 +158,8 @@
     width: 21.5rem;
     height: 7.5rem;
     border-radius: 0.32431rem;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(8.108108520507812px);
     margin-bottom: 0.6rem;
     gap: 2.07938rem;
@@ -169,7 +170,7 @@
     padding: 0.5rem 2.38rem;
     border-radius: 0.32431rem;
     font-size: 0.5rem;
-    top: 2.95rem;
+    top: 2.88rem;
     right: 2.25rem;
   }
   .leftCard {
@@ -224,8 +225,8 @@
     width: 37.5rem;
     height: 10.25rem;
     border-radius: 0.52431rem;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 2.27027px 2.27027px 11.35135px 1.2973px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(8.108108520507812px);
     margin-bottom: 1rem;
     gap: 2.07938rem;
@@ -237,7 +238,7 @@
     border-radius: 0.52431rem;
     font-size: 0.8rem;
     top: 3.55rem;
-    right: 2.25rem;
+    right: 3.1rem;
   }
   .leftCard {
     position: absolute;
@@ -277,4 +278,32 @@
     width: 0.25rem;
     height: 0.25rem;
   }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.cardSlideFromLeft {
+  animation: slideFromLeft 1s forwards;
+}
+
+.cardSlideFromRight {
+  animation: slideFromRight 1s forwards;
 }
