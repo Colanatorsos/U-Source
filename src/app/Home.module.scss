@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 40px;
 
-  > h1 {
+  >h1 {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 48px;
@@ -18,7 +18,7 @@
     line-height: normal;
   }
 
-  > p {
+  >p {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 22px;
@@ -28,7 +28,7 @@
     line-height: normal;
   }
 
-  > .heroBtn {
+  >.heroBtn {
     //display: flex;
     //width: 255px;
     //height: 60px;
@@ -64,7 +64,7 @@
   align-items: center;
   gap: 30px;
 
-  > h2 {
+  >h2 {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -75,7 +75,7 @@
     line-height: normal;
   }
 
-  > p {
+  >p {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -99,7 +99,8 @@
   gap: 50px;
   display: flex;
   flex-direction: column;
-  > h1 {
+
+  >h1 {
     color: var(--White);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -108,24 +109,32 @@
     font-weight: 700;
     line-height: normal;
   }
-  > div {
+
+  >div {
     position: relative;
-    > img {
+
+    >img {
+      transition: opacity 2.4s ease-in-out;
+      opacity: 0;
       position: absolute;
       width: calc(var(--index) * 7.446);
       height: calc(var(--index) * 7.446);
+
       &:nth-child(1) {
         left: calc(var(--index) * 2.8);
         top: calc(var(--index) * -3.8);
       }
+
       &:nth-child(2) {
         right: calc(var(--index) * 3.8);
         top: calc(var(--index) * -4.3);
       }
+
       &:nth-child(3) {
         left: calc(var(--index) * 3.8);
         bottom: calc(var(--index) * -2.8);
       }
+
       &:nth-child(4) {
         right: calc(var(--index) * 3);
         bottom: calc(var(--index) * -1.9);
@@ -154,26 +163,33 @@
     grid-template-rows: repeat(2, 350px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    > img {
+
+    >img {
+      transition: opacity 2.4s ease-in-out;
+      opacity: 0;
       position: absolute;
       width: calc(var(--index) * 7.446);
       height: calc(var(--index) * 7.446);
-      &:nth-child(1) {
-        left: calc(var(--index) * -4.6);
-        top: calc(var(--index) * -3.8);
-      }
-      &:nth-child(2) {
-        right: calc(var(--index) * -4.3);
-        top: calc(var(--index) * -3.5);
-      }
-      &:nth-child(3) {
-        left: calc(var(--index) * -5);
-        bottom: calc(var(--index) * -0.8);
-      }
-      &:nth-child(4) {
-        right: calc(var(--index) * -5);
-        bottom: calc(var(--index) * -1.3);
-      }
+    }
+
+    >img:nth-child(1) {
+      left: calc(var(--index) * -4.6);
+      top: calc(var(--index) * -3.8);
+    }
+
+    >img:nth-child(2) {
+      right: calc(var(--index) * -4.3);
+      top: calc(var(--index) * -3.5);
+    }
+
+    >img:nth-child(3) {
+      left: calc(var(--index) * -5);
+      bottom: calc(var(--index) * -0.8);
+    }
+
+    >img:nth-child(4) {
+      right: calc(var(--index) * -5);
+      bottom: calc(var(--index) * -1.3);
     }
   }
 }
@@ -186,25 +202,29 @@
   text-align: center;
   background: url(/home/our-services.svg) no-repeat;
   background-position: calc(50% - 2px) 29px;
+
   .svgFigma {
     position: absolute;
     top: -88px;
     right: 23px;
     z-index: 10;
   }
+
   .svgPyt {
     position: absolute;
     top: -90px;
     right: 23px;
     z-index: 10;
   }
+
   .svgChart {
     position: absolute;
     top: -90px;
     right: 23px;
     z-index: 10;
   }
-  > h1 {
+
+  >h1 {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -214,7 +234,7 @@
     line-height: normal;
   }
 
-  > p {
+  >p {
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -231,7 +251,7 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
-    > a {
+    >a {
       display: flex;
       justify-self: center;
       align-self: center;
@@ -277,7 +297,7 @@
     backdrop-filter: blur(25px);
     margin-bottom: 50px;
 
-    > p {
+    >p {
       color: var(--White, #fff);
       text-align: center;
       font-feature-settings: "clig" off, "liga" off;
@@ -296,7 +316,7 @@
     align-items: center;
     gap: 30px;
 
-    > h3 {
+    >h3 {
       color: var(--White, #fff);
       text-align: center;
       font-feature-settings: "clig" off, "liga" off;
@@ -306,7 +326,7 @@
       line-height: normal;
     }
 
-    > a {
+    >a {
       padding: 14px 0px 13px 0px;
       width: 100%;
       display: flex;
@@ -334,6 +354,8 @@
 }
 
 .Portfolio {
+  margin-top: 10%;
+
   &Title {
     color: var(--White, #fff);
     text-align: center;
@@ -385,6 +407,7 @@
     grid-row-gap: 30px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1129px) {
   .OurServices {
     background-image: url(/home/figma-min.svg), url(/home/python-min.svg),
@@ -392,12 +415,13 @@
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: calc(50% - -365px) 203px, calc(50% - 353px) 143px,
       calc(50% - 365px) 583px;
+
     &Block {
       display: grid;
       grid-column-gap: 30px;
       grid-row-gap: 0px;
 
-      > a {
+      >a {
         display: flex;
         justify-self: center;
         align-self: center;
@@ -422,10 +446,12 @@
       }
     }
   }
+
   .About {
     background-image: url(/home/command-min.svg), url(/home/scroll-min.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: calc(50% - -336px) 470px, calc(50% - 333px) 29px;
+
     &Title {
       color: var(--White, #fff);
       text-align: center;
@@ -450,7 +476,8 @@
       justify-content: center;
       text-align: center;
       display: flex;
-      > p {
+
+      >p {
         width: 590px;
 
         color: var(--White, #fff);
@@ -471,7 +498,7 @@
       align-items: center;
       gap: 30px;
 
-      > h3 {
+      >h3 {
         color: var(--White, #fff);
         text-align: center;
         font-feature-settings: "clig" off, "liga" off;
@@ -482,7 +509,7 @@
         line-height: normal;
       }
 
-      > a {
+      >a {
         padding: 14px 0px 13px 0px;
         width: 100%;
         display: flex;
@@ -509,18 +536,21 @@
     }
   }
 }
+
 @media (max-width: 1130px) {
   .OurServices {
+
     //> h1 {
     //  font-size: 20px;
     //}
-    > p {
+    >p {
       font-size: 14px;
     }
 
     &Block {
       grid-template-columns: repeat(2, 48%);
-      > a {
+
+      >a {
         padding: 11px 34px;
         font-size: 15px;
       }
@@ -560,6 +590,7 @@
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
+
     &Btn {
       padding: 11px 21px;
       font-size: 15px;
@@ -576,11 +607,13 @@
       calc(50% - -180px) 233px, calc(50% - 180px) 17px;
 
   }
+
   .About {
     background-image: url(/home/command-min.svg), url(/home/scroll-min.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: calc(50% - -180px) 233px, calc(50% - 180px) 17px;
   }
+
   .hero {
     padding: 60px 0 0px;
   }
@@ -589,26 +622,26 @@
     width: 100%;
     gap: 28px;
 
-    > h1 {
+    >h1 {
       font-size: 33px;
     }
 
-    > p {
+    >p {
       font-size: 14px;
     }
 
-    > .heroBtn {
+    >.heroBtn {
       padding: 12px 29px 11px 28px;
       font-size: 14px;
     }
   }
 
   .heroUnder {
-    > h2 {
+    >h2 {
       font-size: 20px;
     }
 
-    > p {
+    >p {
       font-size: 14px;
     }
   }
@@ -621,6 +654,7 @@
 
   .ourAdvantages {
     margin: 0;
+
     &Block {
       grid-template-rows: repeat(3, 170px);
       grid-column-gap: 20px;
@@ -632,21 +666,25 @@
     // background: url(/home/our-services-min.svg) no-repeat;
     // background-position: calc(50% - 2px) 29px;
     position: relative;
-    > p {
+
+    >p {
       font-size: 14px;
     }
+
     .svgFigma {
       position: absolute;
       top: 162px;
       right: -3px;
       z-index: 10;
     }
+
     .svgPyt {
       position: absolute;
       top: 372px;
       left: -3px;
       z-index: 10;
     }
+
     .svgChart {
       position: absolute;
       top: 580px;
@@ -660,7 +698,7 @@
       grid-column-gap: px;
       grid-row-gap: 20px;
 
-      > a {
+      >a {
         padding: 11px 34px;
         font-size: 15px;
       }
@@ -678,17 +716,18 @@
       max-width: 100%;
       margin-bottom: 30px;
 
-      > p {
+      >p {
         font-size: 18px;
       }
     }
 
     &TextBox {
       gap: 13px;
+
       //> h3 {
       //  font-size: 20px;
       //}
-      > a {
+      >a {
         padding: 8px 38px;
         max-width: 120px;
         font-size: 15px;
@@ -698,8 +737,8 @@
 }
 
 @media (max-width: 350px) {
-  .Portfolio{
-    &Grid{
+  .Portfolio {
+    &Grid {
       grid-template-columns: repeat(2, 46%);
     }
   }

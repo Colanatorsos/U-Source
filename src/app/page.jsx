@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styles from './Home.module.scss'
 import Link from 'next/link'
@@ -10,6 +11,31 @@ import PortfolioCard from '../components/home/PorfolioCard'
 
 
 const page = () => {
+  const [imagesVisible, setImagesVisible] = useState([false, false, false, false]);
+  const [imagesVisible2, setImagesVisible2] = useState([false, false, false, false]);
+
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
+
+
+  useEffect(() => {
+    if (inView) {
+      setImagesVisible([true, true, true, true]);
+    }
+  }, [inView]);
+  useEffect(() => {
+    if (inView2) {
+      setImagesVisible2([true, true, true, true]);
+    }
+  }, [inView2]);
+
   const companyValuesSliderContent = [
     {
       title: 'Инновации',
@@ -118,7 +144,7 @@ const page = () => {
     }
   ];
   return (
-    <div style={{overflow: 'hidden'}}>
+    <div style={{ overflow: 'hidden' }}>
       <section className={styles.hero}>
         <div className="container">
           <div className='d-flex justify-space-between align-items-center'>
@@ -146,10 +172,35 @@ const page = () => {
       <section className={styles.companyValues}>
         <h1>Ценности компании:</h1>
         <div>
-          <Image src="/home/shield-search.svg" width={160} height={160} alt='bg' />
-          <Image src="/home/flash.svg" width={160} height={160} alt='bg' />
-          <Image src="/home/global.svg" width={160} height={160} alt='bg' />
-          <Image src="/home/cup.svg" width={160} height={160} alt='bg' />
+          <Image
+            ref={ref}
+            src="/home/shield-search.svg"
+            width={160}
+            height={160}
+            alt='bg'
+            style={{ opacity: imagesVisible[0] ? 1 : 0 }}
+          />
+          <Image
+            src="/home/flash.svg"
+            width={160}
+            height={160}
+            alt='bg'
+            style={{ opacity: imagesVisible[1] ? 1 : 0 }}
+          />
+          <Image
+            src="/home/global.svg"
+            width={160}
+            height={160}
+            alt='bg'
+            style={{ opacity: imagesVisible[2] ? 1 : 0 }}
+          />
+          <Image
+            src="/home/cup.svg"
+            width={160}
+            height={160}
+            alt='bg'
+            style={{ opacity: imagesVisible[3] ? 1 : 0 }}
+          />
           <Slider children={companyValuesSliderContent} />
         </div>
       </section>
@@ -157,32 +208,20 @@ const page = () => {
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.ourAdvantagesH}>Наши преимущества:</h1>
           <div className={styles.ourAdvantagesBlock}>
-            <Image src="/home/lamp-charge.svg" width={160} height={160} alt='bg' />
-            <Image src="/home/clock.svg" width={160} height={160} alt='bg' />
-            <Image src="/home/messages-2.svg" width={160} height={160} alt='bg' />
-            <Image src="/home/verify.svg" width={160} height={160} alt='bg' />
+            <Image ref={ref2} style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/lamp-charge.svg" width={160} height={160} alt='bg' />
+            <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/clock.svg" width={160} height={160} alt='bg' />
+            <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/messages-2.svg" width={160} height={160} alt='bg' />
+            <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/verify.svg" width={160} height={160} alt='bg' />
             <Card children={ourAdvantagesContent} />
           </div>
         </div>
       </section>
-      {/* ___________________________________________________________ */}
-      <section className={styles.Portfolio}>
-        <div className="container d-flex flex-d-column align-items-center">
-          <h3 className={styles.PortfolioTitle}>Наши проекты</h3>
-          <p className={styles.PortfolioDesc}>Мы гордимся каждым из этих проектов, которые стали не только техническими достижениями, но и важными шагами к достижению целей наших клиентов.</p>
-          <div className={styles.PortfolioGrid}>
-            <PortfolioCard children={PortfolioContent} />
-          </div>
-          <Link href='Portfolio' className={styles.PortfolioBtn}>Еще больше проектов</Link>
-        </div>
-      </section>
-      {/* ___________________________________________________________ */}
       <section className={styles.OurServices}>
         <h1>Наши услуги</h1>
         <p>В U! мы предлагаем разнообразные услуги, которые охватывают все аспекты разработки, от концепции до <br /> воплощения, с акцентом на инновации, качество и удовлетворение клиентов.</p>
         <div className="container d-flex justify-space-centre">
           <div className={styles.OurServicesBlock}>
-          <Image
+            <Image
               src="/home/figma-min.svg"
               alt="Описание изображения"
               className={styles.svgFigma}
@@ -197,7 +236,7 @@ const page = () => {
               width={64}
               height={62}
             />
-             <Image
+            <Image
               src="/home/chart-min.svg"
               alt="Описание изображения"
               className={styles.svgChart}
@@ -218,6 +257,16 @@ const page = () => {
             <h3>Более подробнее о нас можете узнать</h3>
             <Link href='/About'>Здесь</Link>
           </div>
+        </div>
+      </section>
+      <section className={styles.Portfolio}>
+        <div className="container d-flex flex-d-column align-items-center">
+          <h3 className={styles.PortfolioTitle}>Наши проекты</h3>
+          <p className={styles.PortfolioDesc}>Мы гордимся каждым из этих проектов, которые стали не только техническими достижениями, но и важными шагами к достижению целей наших клиентов.</p>
+          <div className={styles.PortfolioGrid}>
+            <PortfolioCard children={PortfolioContent} />
+          </div>
+          <Link href='Portfolio' className={styles.PortfolioBtn}>Еще больше проектов</Link>
         </div>
       </section>
       <section>
