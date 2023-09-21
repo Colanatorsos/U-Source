@@ -146,6 +146,10 @@ const page = () => {
       <section className={styles.companyValues}>
         <h1>Ценности компании:</h1>
         <div>
+          <Image src="/home/shield-search.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/flash.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/global.svg" width={160} height={160} alt='bg' />
+          <Image src="/home/cup.svg" width={160} height={160} alt='bg' />
           <Slider children={companyValuesSliderContent} />
         </div>
       </section>
@@ -153,6 +157,10 @@ const page = () => {
         <div className="container d-flex flex-d-column align-items-center gap-50">
           <h1 className={styles.ourAdvantagesH}>Наши преимущества:</h1>
           <div className={styles.ourAdvantagesBlock}>
+            <Image src="/home/lamp-charge.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/clock.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/messages-2.svg" width={160} height={160} alt='bg' />
+            <Image src="/home/verify.svg" width={160} height={160} alt='bg' />
             <Card children={ourAdvantagesContent} />
           </div>
         </div>
