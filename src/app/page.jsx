@@ -7,7 +7,6 @@ import Slider from '../components/home/Slider'
 import Card from '../components/home/Card'
 import Form from '../app/Contacts/page'
 import PortfolioCard from '../components/home/PorfolioCard'
-import anime from 'animejs/lib/anime.es'
 
 
 const page = () => {

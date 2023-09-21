@@ -143,7 +143,6 @@
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     font-size: calc(var(--index) * 1.67);
-    //font-size: 36px;
     font-style: normal;
     font-weight: 700;
   }
@@ -209,7 +208,6 @@
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    //font-size: 36px;
     font-size: calc(var(--index) * 1.67);
     font-style: normal;
     font-weight: 700;
@@ -263,7 +261,6 @@
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    //font-size: 36px;
     font-size: calc(var(--index) * 1.67);
     font-style: normal;
     font-weight: 700;
@@ -273,7 +270,6 @@
 
   &Card {
     max-width: 1110px;
-    //padding: 62px 143px 63px 142px;
     padding: calc(var(--index) * 3.63) calc(var(--index) * 6.5);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.15);
@@ -304,7 +300,6 @@
       color: var(--White, #fff);
       text-align: center;
       font-feature-settings: "clig" off, "liga" off;
-      //font-size: 36px;
       font-size: calc(var(--index) * 1.67);
       font-style: normal;
       font-weight: 700;
@@ -343,7 +338,6 @@
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    //font-size: 36px;
     font-size: calc(var(--index) * 1.67);
     font-style: normal;
     font-weight: 700;

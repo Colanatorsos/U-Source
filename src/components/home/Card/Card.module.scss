@@ -12,7 +12,8 @@
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 7px 7px 35px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
-  > h4 {
+
+  >h4 {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 22px;
@@ -20,7 +21,8 @@
     font-weight: 700;
     line-height: normal;
   }
-  > p {
+
+  >p {
     color: var(--White);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 14px;
@@ -33,12 +35,15 @@
 .OurServicesBlockH {
   font-size: 24px !important;
 }
+
 .OurServicesBlockP {
   font-size: 20px !important;
 }
+
 .dNone {
   display: none;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1129px) {
   .card {
     position: relative;
@@ -53,20 +58,26 @@
   }
 
 }
+
 @media (max-width: 1130px) {
   .card {
     gap: 10px;
+
     .OurServicesBlockH {
       font-size: 18px !important;
     }
+
     .OurServicesBlockP {
       font-size: 14px !important;
     }
-    > h4 {
+
+    >h4 {
       font-size: 14px;
     }
-    > p {
+
+    >p {
       font-size: 10px;
     }
   }
 
+}

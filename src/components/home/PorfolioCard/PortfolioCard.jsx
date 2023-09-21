@@ -59,7 +59,6 @@ const PortfolioCard = ({ children }) => {
         <div
           className={`${styles.PortfolioCard} animate-element`}
           key={el.id}
-          //ref={ref}
           ref={(ref) => {
             cardRefs.current[idx] = ref;
             inViewRef(ref);
