@@ -13,6 +13,7 @@ import PortfolioCard from '../components/home/PorfolioCard'
 const page = () => {
   const [imagesVisible, setImagesVisible] = useState([false, false, false, false]);
   const [imagesVisible2, setImagesVisible2] = useState([false, false, false, false]);
+  const [imagesVisible3, setImagesVisible3] = useState([false, false, false, false]);
 
 
   const [ref, inView] = useInView({
@@ -20,6 +21,10 @@ const page = () => {
     threshold: 1,
   });
   const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
+  const [ref3, inView3] = useInView({
     triggerOnce: true,
     threshold: 1,
   });
@@ -35,6 +40,11 @@ const page = () => {
       setImagesVisible2([true, true, true, true]);
     }
   }, [inView2]);
+  useEffect(() => {
+    if (inView3) {
+      setImagesVisible3([true, true, true, true]);
+    }
+  }, [inView3]);
 
   const companyValuesSliderContent = [
     {
@@ -222,27 +232,31 @@ const page = () => {
         <div className="container d-flex justify-space-centre">
           <div className={styles.OurServicesBlock}>
             <Image
+              ref={ref3}
+              src="/home/python-min.svg"
+              alt="Описание изображения"
+              className={styles.svgFigma}
+              width={160}
+              height={160}
+              style={{ opacity: imagesVisible3[0] ? 1 : 0, left: imagesVisible3[0] ? 'calc(var(--index) * -1.5)' : 'calc(var(--index) * -0.5)' }}
+            />
+            <Image
               src="/home/figma-min.svg"
               alt="Описание изображения"
               className={styles.svgFigma}
-              width={64}
-              height={62}
-            />
-            <Card children={OurServicesContent} />
-            <Image
-              src="/home/python-min.svg"
-              alt="Описание изображения"
-              className={styles.svgPyt}
-              width={64}
-              height={62}
+              width={160}
+              height={160}
+              style={{ opacity: imagesVisible3[0] ? 1 : 0 }}
             />
             <Image
               src="/home/chart-min.svg"
               alt="Описание изображения"
-              className={styles.svgChart}
-              width={64}
-              height={62}
+              className={styles.svgFigma}
+              width={160}
+              height={160}
+              style={{ opacity: imagesVisible3[0] ? 1 : 0 }}
             />
+            <Card children={OurServicesContent} />
             <Link href='/Service'>Узнать подробнее</Link>
           </div>
         </div>
@@ -250,8 +264,12 @@ const page = () => {
       <section className={styles.About}>
         <div className="container d-flex flex-d-column align-items-center">
           <h1 className={styles.AboutTitle}>О нас</h1>
-          <div className={styles.AboutCard}>
-            <p>Наши решения возможны благодаря нашей выдающейся команде. Мы объединяем дизайнеров, бэкенд и фронтенд разработчиков с опытом работы более 4 лет. Наши специалисты не только обладают глубокими знаниями в своей области, но и делятся общей страстью к инновациям.</p>
+          <div>
+            <Image src='/home/scroll-min.svg' width={60} height={60} alt='bg' />
+            <Image src='/home/command-min.svg' width={60} height={60} alt='bg' />
+            <div className={styles.AboutCard}>
+              <p>Наши решения возможны благодаря нашей выдающейся команде. Мы объединяем дизайнеров, бэкенд и фронтенд разработчиков с опытом работы более 4 лет. Наши специалисты не только обладают глубокими знаниями в своей области, но и делятся общей страстью к инновациям.</p>
+            </div>
           </div>
           <div className={styles.AboutTextBox}>
             <h3>Более подробнее о нас можете узнать</h3>
