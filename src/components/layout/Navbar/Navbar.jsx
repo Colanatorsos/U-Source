@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import styles from './Navbar.module.scss'
 import Link from 'next/link'
-import React, { useState } from 'react';
+import {usePathname} from 'next/navigation'
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('Главная'); // Устанавливаем начальный активный пункт
+  const pathname = usePathname()
   return (
     <header className={styles.header}>
       <div className="container-lg">
@@ -20,11 +20,11 @@ const Navbar = () => {
           </Link>
           <ul className={styles.ul}>
             <ul className={styles.ul}>
-              <li className={activeLink === 'Главная' ? `${styles.li} ${styles.active}` : styles.li} onClick={() => setActiveLink('Главная')}><Link className={activeLink === 'Главная' ? `${styles.link} ${styles.active}` : styles.link} onClick={() => setActiveLink('Главная')} href='/'>Главная</Link></li>
-              <li className={activeLink === 'Услуги' ? `${styles.li} ${styles.active}` : styles.li} onClick={() => setActiveLink('Услуги')}><Link className={activeLink === 'Услуги' ? `${styles.link} ${styles.active}` : styles.link} onClick={() => setActiveLink('Услуги')} href='/Service'>Услуги</Link></li>
-              <li className={activeLink === 'О нас' ? `${styles.li} ${styles.active}` : styles.li} onClick={() => setActiveLink('О нас')}><Link className={activeLink === 'О нас' ? `${styles.link} ${styles.active}` : styles.link} onClick={() => setActiveLink('О нас')} href='/About'>О нас</Link></li>
-              <li className={activeLink === 'Портфолио' ? `${styles.li} ${styles.active}` : styles.li} onClick={() => setActiveLink('Портфолио')}><Link className={activeLink === 'Портфолио' ? `${styles.link} ${styles.active}` : styles.link} onClick={() => setActiveLink('Портфолио')} href='/Portfolio'>Портфолио</Link></li>
-              <li className={activeLink === 'Контакты' ? `${styles.li} ${styles.active}` : styles.li} onClick={() => setActiveLink('Контакты')}><Link className={activeLink === 'Контакты' ? `${styles.link} ${styles.active}` : styles.link} onClick={() => setActiveLink('Контакты')} href='/Contacts'>Контакты</Link></li>
+              <li className={pathname === '/' ? `${styles.li} ${styles.active}` : styles.li} ><Link className={pathname === '/' ? `${styles.link} ${styles.active}` : styles.link} href='/'>Главная</Link></li>
+              <li className={pathname === '/Service' ? `${styles.li} ${styles.active}` : styles.li} ><Link className={pathname === '/Service' ? `${styles.link} ${styles.active}` : styles.link} href='/Service'>Услуги</Link></li>
+              <li className={pathname === '/About' ? `${styles.li} ${styles.active}` : styles.li} ><Link className={pathname === '/About' ? `${styles.link} ${styles.active}` : styles.link} href='/About'>О нас</Link></li>
+              <li className={pathname === '/Portfolio' ? `${styles.li} ${styles.active}` : styles.li} ><Link className={pathname === '/Portfolio' ? `${styles.link} ${styles.active}` : styles.link} href='/Portfolio'>Портфолио</Link></li>
+              <li className={pathname === '/Contacts' ? `${styles.li} ${styles.active}` : styles.li} ><Link className={pathname === '/Contacts' ? `${styles.link} ${styles.active}` : styles.link} href='/Contacts'>Контакты</Link></li>
             </ul>
           </ul>
           <Link className={styles.btn} href='/Contacts'>Свяжитесь с нами</Link>

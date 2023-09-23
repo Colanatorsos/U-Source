@@ -161,7 +161,7 @@ const page = () => {
             <div className={styles.heroLeft}>
               <h1>U! – Команда лучших <br /> специалистов в IT</h1>
               <p>U! объединяет уникальные знания и навыки в области программирования, дизайна, и управления. Ваша компания может доверить свои важнейшие задачи экспертам из U!</p>
-              <Link className={styles.heroBtn} href='/contacts'>Свяжитесь с нами </Link>
+              <Link className={styles.heroBtn} href='/Contacts'>Свяжитесь с нами </Link>
             </div>
             <div className='d-none d-md-block'>
               <Image src='/Logo.svg' priority={true} width={380.998} height={289.407} alt='logo' />
@@ -222,7 +222,7 @@ const page = () => {
             <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/clock.svg" width={160} height={160} alt='bg' />
             <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/messages-2.svg" width={160} height={160} alt='bg' />
             <Image style={{ opacity: imagesVisible2[0] ? 1 : 0 }} src="/home/verify.svg" width={160} height={160} alt='bg' />
-            <Card children={ourAdvantagesContent} />
+            <Card justifyC={'center'} children={ourAdvantagesContent} />
           </div>
         </div>
       </section>

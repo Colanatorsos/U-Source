@@ -6,7 +6,7 @@ import React, { useRef, useEffect } from "react"
 import { useInView } from 'react-intersection-observer';
 
 
-const Card = React.memo(({ children }) => {
+const Card = React.memo(({ children, justifyC }) => {
   const cardRefs = useRef([]);
   const [inViewRef, inView] = useInView({
     triggerOnce: true,
@@ -62,7 +62,7 @@ const Card = React.memo(({ children }) => {
               cardRefs.current[idx] = ref;
               inViewRef(ref);
             }}
-            style={{ opacity: 0, transform: 'translateY(0px)' }}
+            style={{ opacity: 0, transform: 'translateY(0px)', justifyContent: justifyC }}
           >
             <h4 className={children.length === 3 ? styles.OurServicesBlockH : ''}>{el.title}</h4>
             <p className={children.length === 3 ? styles.OurServicesBlockP : ''}>{el.desc}</p>

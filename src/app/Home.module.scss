@@ -160,7 +160,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 47%);
-    grid-template-rows: repeat(2, 350px);
+    grid-template-rows: repeat(3, 350px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
@@ -425,7 +425,7 @@
     &Block {
       display: grid;
       grid-column-gap: 30px;
-      grid-row-gap: 0px;
+      grid-row-gap: 30px;
 
       > a {
         display: flex;
@@ -690,8 +690,9 @@
         }
         &:nth-child(3) {
           transform: rotate(52deg);
-          left: calc(var(--index) * 32.7);
-          bottom: calc(var(--index) * 20.5);
+          left: unset;
+          right: calc(var(--index) * -2.5);
+          bottom: calc(var(--index) * 16.5);
         }
       }
       > a {
